@@ -50,16 +50,9 @@ public abstract class Action  {
 
     protected void initialiseAttributes(HttpServletRequest req) {
         requestMethod = req.getMethod();
-        //processContentType(req);
-        //processQueryStringStatus(req);
     }
 
-    private void processQueryStringStatus(HttpServletRequest request){
 
-            if(request.getQueryString() != null){
-                isQueryStringPresent = true;
-            }
-    }
 
     // Retrieve the parameters from the url's query string
     public HashMap<String, String> getUrlParameter(String[] params){
@@ -75,23 +68,6 @@ public abstract class Action  {
         return paramMap;
     }
 
-    private void processContentType(HttpServletRequest request){
-
-    /*    switch (request.getContentType()){
-
-            case "application/json":{
-
-                StringBuffer jb = new StringBuffer();
-                String line = null;
-                try {
-                    BufferedReader reader = request.getReader();
-                    while ((line = reader.readLine()) != null)
-                        jb.append(line);
-                } catch (Exception e) { *//*report an error*//* }
-                requestBody = jb.toString();
-            }break;
-        }*/
-    }
 
     public abstract ActionResult execute();
 }

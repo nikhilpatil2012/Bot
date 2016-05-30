@@ -28,14 +28,7 @@ public class UserAction extends Action {
             // get all the users
             case "GET":{
 
-                if(isQueryStringPresent()){
 
-                     //responseList = userDAO.getUserById(getUrlParameter(new String[]{""}));
-                }
-                  else {
-
-                    responseList = userDAO.getAllUsers();
-                }
 
             }break;
 
