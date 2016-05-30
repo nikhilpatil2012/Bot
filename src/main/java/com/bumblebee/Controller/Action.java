@@ -23,6 +23,7 @@ public abstract class Action  {
 
     static {
         map.put("User_Model", User.class);
+
     }
 
     public ShowPageResult createShowPageResult(String data){
@@ -49,8 +50,8 @@ public abstract class Action  {
 
     protected void initialiseAttributes(HttpServletRequest req) {
         requestMethod = req.getMethod();
-        processContentType(req);
-        processQueryStringStatus(req);
+        //processContentType(req);
+        //processQueryStringStatus(req);
     }
 
     private void processQueryStringStatus(HttpServletRequest request){
@@ -76,7 +77,7 @@ public abstract class Action  {
 
     private void processContentType(HttpServletRequest request){
 
-        switch (request.getContentType()){
+    /*    switch (request.getContentType()){
 
             case "application/json":{
 
@@ -86,10 +87,10 @@ public abstract class Action  {
                     BufferedReader reader = request.getReader();
                     while ((line = reader.readLine()) != null)
                         jb.append(line);
-                } catch (Exception e) { /*report an error*/ }
+                } catch (Exception e) { *//*report an error*//* }
                 requestBody = jb.toString();
             }break;
-        }
+        }*/
     }
 
     public abstract ActionResult execute();
