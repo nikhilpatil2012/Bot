@@ -14,7 +14,7 @@ import java.util.List;
  */
 
 @Service
-public class UserAction extends Action{
+public class UserAction extends Action {
 
 
     @Override
@@ -30,7 +30,7 @@ public class UserAction extends Action{
 
                 if(isQueryStringPresent()){
 
-                     responseList = userDAO.getUserById(getUrlParameter("id"));
+                     //responseList = userDAO.getUserById(getUrlParameter(new String[]{""}));
                 }
                   else {
 
@@ -48,7 +48,7 @@ public class UserAction extends Action{
             }break;
         }
 
-        return createShowPageResult(responseList);
+        return createShowPageResult("");
     }
 
     // Jackson Object Mapper

@@ -1,9 +1,10 @@
 package com.bumblebee.Controller;
 
-import com.bumblebee.model.Response;
 import com.bumblebee.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -19,7 +20,7 @@ public class UserController {
     UserModel userModel;
 
     @RequestMapping(value = "/*")
-    public Response addUser(HttpServletRequest request) {
+    public ResponseEntity<String> addUser(HttpServletRequest request) {
 
         Action action = new ActionFactory().getAction(request);
 
@@ -27,6 +28,8 @@ public class UserController {
 
         return actionResult.createResponse();
     }
+
+
 
 
 }

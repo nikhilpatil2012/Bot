@@ -14,7 +14,7 @@ public class ActionFactory {
 
     static {
 
-        map(Const.ActionURIs.USER_CRUD, UserAction.class);
+        map(Const.ActionURIs.WEB_HOOK, WebhookAction.class);
 
     }
 

@@ -6,7 +6,6 @@ import com.bumblebee.model.User;
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by deadcode on 23/04/16.
@@ -26,7 +25,7 @@ public abstract class Action  {
         map.put("User_Model", User.class);
     }
 
-    public ShowPageResult createShowPageResult(List<HashMap<String,String>> data){
+    public ShowPageResult createShowPageResult(String data){
 
         return new ShowPageResult(data);
     }
@@ -61,8 +60,18 @@ public abstract class Action  {
             }
     }
 
-    public String getUrlParameter(String id){
-        return request.getParameter(id);
+    // Retrieve the parameters from the url's query string
+    public HashMap<String, String> getUrlParameter(String[] params){
+
+        HashMap<String, String> paramMap = new HashMap<>();
+
+        for(String p : params){
+
+            if(request.getParameter(p) != null){
+                paramMap.put(p,request.getParameter(p));
+            }
+        }
+        return paramMap;
     }
 
     private void processContentType(HttpServletRequest request){

@@ -21,7 +21,6 @@ com/bumblebee/Helper/ResponseCodes.class
 com/bumblebee/database/DAO/CommonDAO.class
 com/bumblebee/database/DBManager$CollectionList.class
 com/bumblebee/model/Response.class
-com/bumblebee/AssignmentApplication.class
 com/bumblebee/Controller/UserAction.class
 com/bumblebee/database/DAO/UserDAO$2.class
 com/bumblebee/model/User.class

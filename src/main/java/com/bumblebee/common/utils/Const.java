@@ -6,7 +6,6 @@ package com.bumblebee.common.utils;
 public class Const {
 
     public class ActionURIs{
-        public static final String USER_CRUD = "/user";
-
+        public static final String WEB_HOOK = "/webhook";
     }
 }
