@@ -1,6 +1,15 @@
 package com.bumblebee.Controller;
 
+import com.bumblebee.ChatbotFiles.ChatParser;
+import com.bumblebee.ChatbotFiles.MessageMiner;
+import com.bumblebee.ChatbotFiles.Query;
+import com.bumblebee.ChatbotFiles.ResponseExecuter;
+import com.bumblebee.common.utils.WatsonCallback;
+import com.mashape.unirest.http.Unirest;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.HashMap;
 
 /**
@@ -8,6 +17,11 @@ import java.util.HashMap;
  */
 public class WebhookAction extends Action {
 
+    private ChatParser chatParser = new ChatParser();
+
+    private MessageMiner messageMiner = new MessageMiner();
+
+    private ResponseExecuter responseExecuter = new ResponseExecuter();
 
     @Override
     public ActionResult execute() {
@@ -44,6 +58,22 @@ public class WebhookAction extends Action {
 
                 response = jb.toString();
 
+                chatParser.parseText(response.toString());
+
+                System.err.println(chatParser.getMessage()+chatParser.getSenderId());
+
+                messageMiner.sendMessageToWatson(chatParser, new WatsonCallback() {
+                    @Override
+                    public void GetQuery(Query query) {
+
+                        System.out.println("Query Message "+query.getWhere()+query.getWhat());
+
+                        // Execute the response
+                        responseExecuter.execute(query);
+
+                    }
+                });
+
                 System.err.println(response);
 
 
@@ -52,4 +82,7 @@ public class WebhookAction extends Action {
 
         return createShowPageResult(response);
     }
+
+
 }
+
