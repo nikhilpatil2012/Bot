@@ -59,7 +59,9 @@ public class WebhookAction extends Action {
 
                 response = jb.toString();
 
-                chatParser.parseText(response.toString());
+                System.err.println(response);
+
+               /* chatParser.parseText(response.toString());
 
                 if(chatParser.getMessageType() != null){
                     System.err.println("Message Type "+chatParser.getMessageType());
@@ -77,7 +79,7 @@ public class WebhookAction extends Action {
                             }
                         });
                     }
-                }
+                }*/
                // new UnirestStop().start();
 
                 System.err.println(response);
