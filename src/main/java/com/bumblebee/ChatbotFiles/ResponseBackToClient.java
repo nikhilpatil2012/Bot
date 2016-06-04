@@ -31,7 +31,7 @@ public class ResponseBackToClient {
                     @Override
                     public void completed(HttpResponse<JsonNode> httpResponse) {
                         System.out.println(httpResponse.getBody());
-                        closeConnection();
+                        //closeConnection();
                     }
 
                     @Override
