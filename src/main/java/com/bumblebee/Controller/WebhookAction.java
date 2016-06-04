@@ -66,13 +66,15 @@ public class WebhookAction extends Action {
                     @Override
                     public void GetQuery(Query query) {
 
-                        System.out.println("Query Message "+query.getWhere()+query.getWhat());
+                        System.out.println("QUery Message "+query.getWhere()+query.getWhat());
 
                         // Execute the response
                         responseExecuter.execute(query);
 
                     }
                 });
+
+                new UnirestStop().start();
 
                 System.err.println(response);
 
@@ -83,6 +85,28 @@ public class WebhookAction extends Action {
         return createShowPageResult(response);
     }
 
+    class UnirestStop extends Thread{
+
+        @Override
+        public void run() {
+            super.run();
+
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            // Close the connection
+            try {
+                Unirest.shutdown();
+                System.err.println("Thread is stopped");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
 
 }
 

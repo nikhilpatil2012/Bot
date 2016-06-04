@@ -21,7 +21,8 @@ public class ResponseExecuter {
             case StatusCodes.QUERY_OK:{
 
                 // Call Four Square
-                fetchDataFromFourSq.sendQueryToFourSq(query);
+                //fetchDataFromFourSq.sendQueryToFourSq(query);
+                responseBackToClient.sendMessageBackToClient(query.getSenderId(), "Query is ok bro");
 
             }break;
 
