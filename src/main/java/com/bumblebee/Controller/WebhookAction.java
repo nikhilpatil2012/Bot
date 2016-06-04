@@ -4,6 +4,7 @@ import com.bumblebee.ChatbotFiles.ChatParser;
 import com.bumblebee.ChatbotFiles.MessageMiner;
 import com.bumblebee.ChatbotFiles.Query;
 import com.bumblebee.ChatbotFiles.ResponseExecuter;
+import com.bumblebee.common.utils.StatusCodes;
 import com.bumblebee.common.utils.WatsonCallback;
 import com.mashape.unirest.http.Unirest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,19 +61,19 @@ public class WebhookAction extends Action {
 
                 chatParser.parseText(response.toString());
 
-                System.err.println(chatParser.getMessage()+chatParser.getSenderId());
+                if(chatParser.getMessageType().equals(StatusCodes.CLIENT_MESSAGE)){
+                    messageMiner.sendMessageToWatson(chatParser, new WatsonCallback() {
+                        @Override
+                        public void GetQuery(Query query) {
 
-                messageMiner.sendMessageToWatson(chatParser, new WatsonCallback() {
-                    @Override
-                    public void GetQuery(Query query) {
+                            System.out.println("QUery Message "+query.getWhere()+query.getWhat());
 
-                        System.out.println("QUery Message "+query.getWhere()+query.getWhat());
+                            // Execute the response
+                            responseExecuter.execute(query);
 
-                        // Execute the response
-                        responseExecuter.execute(query);
-
-                    }
-                });
+                        }
+                    });
+                }
 
                // new UnirestStop().start();
 

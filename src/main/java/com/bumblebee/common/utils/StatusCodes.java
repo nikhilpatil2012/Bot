@@ -12,4 +12,10 @@ public class StatusCodes {
     public static final String WHERE_MISSING = "103";
     public static final String QUERY_NOT_OK = "104";
 
+
+    // Fb Message Type
+    public static final String CLIENT_MESSAGE = "201";
+    public static final String BOT_DELIVERY_MESSAGE = "202";
+
+
 }

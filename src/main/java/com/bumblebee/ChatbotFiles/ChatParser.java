@@ -1,5 +1,6 @@
 package com.bumblebee.ChatbotFiles;
 
+import com.bumblebee.common.utils.StatusCodes;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 public class ChatParser {
 
     private String senderId, recipientId, message, queryMessage;
+    private String messageType;
 
     public void parseText(String text){
 
@@ -30,13 +32,17 @@ public class ChatParser {
                  }
 
                  if(!jsonObject.isNull("message")){
+                    messageType = StatusCodes.CLIENT_MESSAGE;
                     message = jsonObject.getJSONObject("message").getString("text");
-
                     queryMessage = message.replace(" ", "+");
                  }
 
              }
          }
+    }
+
+    public String getMessageType() {
+        return messageType;
     }
 
     public String getMessage() {
