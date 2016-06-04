@@ -7,6 +7,7 @@ import com.mashape.unirest.http.async.Callback;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.concurrent.Future;
 
 /**
@@ -30,6 +31,7 @@ public class ResponseBackToClient {
                     @Override
                     public void completed(HttpResponse<JsonNode> httpResponse) {
                         System.out.println(httpResponse.getBody());
+                        closeConnection();
                     }
 
                     @Override
@@ -43,6 +45,14 @@ public class ResponseBackToClient {
                     }
                 });
 
+    }
+
+    public void closeConnection(){
+        try {
+            Unirest.shutdown();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
