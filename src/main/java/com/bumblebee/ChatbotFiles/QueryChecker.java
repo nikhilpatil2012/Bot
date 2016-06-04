@@ -49,6 +49,10 @@ public class QueryChecker {
 
          if(query.getWhat() != null && query.getWhere() != null){
              query.setStatusCode(StatusCodes.QUERY_OK);
+
+             if(tempMemory.containsKey(query.getSenderId())) {
+                 tempMemory.remove(query.getSenderId());
+             }
          }
           else if(query.getWhat() != null && query.getWhere() == null){
              query.setStatusCode(StatusCodes.WHERE_MISSING);
