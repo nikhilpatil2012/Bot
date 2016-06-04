@@ -16,37 +16,41 @@ public class ResponseExecuter {
 
     public void execute(Query query){
 
+        String message = "";
+
         switch (query.getStatusCode()){
 
             case StatusCodes.QUERY_OK:{
 
                 // Call Four Square
                 //fetchDataFromFourSq.sendQueryToFourSq(query);
-                responseBackToClient.sendMessageBackToClient(query.getSenderId(), "Query is ok bro");
+                message = "Query is ok";
 
             }break;
 
             case StatusCodes.WHAT_MISSING:{
 
                 System.out.println("What is missing");
+                message = "What is missing";
 
             }break;
 
             case StatusCodes.WHERE_MISSING:{
 
-                responseBackToClient.sendMessageBackToClient(query.getSenderId(), "Where is missing bro");
-
+                message = "Where is missing";
                 System.out.println("Where is missing");
 
             }break;
 
             case StatusCodes.QUERY_NOT_OK:{
 
-                responseBackToClient.sendMessageBackToClient(query.getSenderId(), "I don't get it bro");
+                message = "Query is not ok";
                 System.out.println("Query is not correct");
 
             }break;
 
         }
+
+        responseBackToClient.sendMessageBackToClient(query.getSenderId(), message);
     }
 }

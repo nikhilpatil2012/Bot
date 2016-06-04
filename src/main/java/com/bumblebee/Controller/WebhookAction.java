@@ -74,7 +74,7 @@ public class WebhookAction extends Action {
                     }
                 });
 
-                new UnirestStop().start();
+               // new UnirestStop().start();
 
                 System.err.println(response);
 
