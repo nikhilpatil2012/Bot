@@ -45,7 +45,7 @@ public class QueryChecker {
     }
 
     // Update the query status
-    private static void updateQueryStatus(Query query){
+    public static void updateQueryStatus(Query query){
 
          if(query.getWhat() != null && query.getWhere() != null){
              query.setStatusCode(StatusCodes.QUERY_OK);
