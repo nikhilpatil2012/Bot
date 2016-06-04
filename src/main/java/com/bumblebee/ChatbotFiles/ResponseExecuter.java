@@ -16,8 +16,8 @@ public class ResponseExecuter {
 
     public void execute(Query query){
 
-        String message = "";
-
+        String message = "Everything is ok";
+/*
         switch (query.getStatusCode()){
 
             case StatusCodes.QUERY_OK:{
@@ -49,7 +49,7 @@ public class ResponseExecuter {
 
             }break;
 
-        }
+        }*/
 
         responseBackToClient.sendMessageBackToClient(query.getSenderId(), message);
     }
