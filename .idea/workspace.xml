@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="151ca84f-c993-45dd-a6c2-d081244ba22e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/Place.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/FetchDataFromFourSq.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/FetchDataFromFourSq.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/ResponseBackToClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/ResponseBackToClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/ResponseExecuter.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/ResponseExecuter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/QueryChecker.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/QueryChecker.java" />
     </list>
     <ignored path="assignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,9 +51,33 @@
       <file leaf-file-name="WebhookAction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42929292">
-              <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.5808081">
+              <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryChecker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/QueryChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageMiner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,15 +176,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/WatsonCallback.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/Query.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/BumblebeeApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/QueryChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/StatusCodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/ChatParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/ResponseBackToClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/Place.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/FetchDataFromFourSq.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/ResponseExecuter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/QueryChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java" />
       </list>
     </option>
   </component>
@@ -1021,31 +1040,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8241206">
-          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/StatusCodes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42713568">
           <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/QueryChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8492462">
-          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1110,10 +1109,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/QueryChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42929292">
-          <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.5808081">
+          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
           <folding />
         </state>
       </provider>

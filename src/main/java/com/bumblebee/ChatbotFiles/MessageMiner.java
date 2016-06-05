@@ -117,8 +117,6 @@ public class MessageMiner {
         // Check the query
         query = QueryChecker.updateQuery(query);
 
-        QueryChecker.updateQueryStatus(query);
-
         return query;
     }
 }
