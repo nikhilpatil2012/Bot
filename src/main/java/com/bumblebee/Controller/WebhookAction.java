@@ -61,7 +61,7 @@ public class WebhookAction extends Action {
 
                 System.err.println(response);
 
-               /* chatParser.parseText(response.toString());
+                chatParser.parseText(response.toString());
 
                 if(chatParser.getMessageType() != null){
                     System.err.println("Message Type "+chatParser.getMessageType());
@@ -71,7 +71,7 @@ public class WebhookAction extends Action {
                             @Override
                             public void GetQuery(Query query) {
 
-                                System.out.println("QUery Message "+query.getWhere()+query.getWhat());
+                                System.err.println("QUery Message "+query.getWhere()+query.getWhat());
 
                                 // Execute the response
                                 responseExecuter.execute(query);
@@ -79,7 +79,7 @@ public class WebhookAction extends Action {
                             }
                         });
                     }
-                }*/
+                }
                // new UnirestStop().start();
 
                 System.err.println(response);

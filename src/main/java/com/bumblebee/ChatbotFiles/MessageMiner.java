@@ -115,7 +115,7 @@ public class MessageMiner {
         query.setWhere(where);
 
         // Check the query
-        //query = QueryChecker.updateQuery(query);
+        query = QueryChecker.updateQuery(query);
 
         QueryChecker.updateQueryStatus(query);
 

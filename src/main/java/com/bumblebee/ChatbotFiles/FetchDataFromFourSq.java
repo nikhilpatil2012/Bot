@@ -32,6 +32,8 @@ public class FetchDataFromFourSq {
 
                         // Parse the Foursquare response
                         parseResponseFromFourSq();
+
+
                     }
 
                     @Override
@@ -50,15 +52,8 @@ public class FetchDataFromFourSq {
 
     public void parseResponseFromFourSq(){
 
-        ResponseBackToClient responseBackToClient = new ResponseBackToClient();
-        responseBackToClient.sendMessageBackToClient(query.getSenderId(), "What is "+query.getWhat()+" and where is "+query.getWhere());
 
-       /*   // Close the connection
-        try {
-            Unirest.shutdown();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
+
     }
 
 }

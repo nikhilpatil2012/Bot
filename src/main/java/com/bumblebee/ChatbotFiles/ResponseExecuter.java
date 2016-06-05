@@ -16,7 +16,7 @@ public class ResponseExecuter {
 
     public void execute(Query query){
 
-        String message = "";
+        String message = "Every thing is ok";
 
         switch (query.getStatusCode()){
 
