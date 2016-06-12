@@ -80,7 +80,6 @@ public class WebhookAction extends Action {
                         });
                     }
                 }
-               // new UnirestStop().start();
 
                 System.err.println(response);
 
@@ -89,29 +88,5 @@ public class WebhookAction extends Action {
 
         return createShowPageResult(response);
     }
-
-    class UnirestStop extends Thread{
-
-        @Override
-        public void run() {
-            super.run();
-
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            // Close the connection
-            try {
-                Unirest.shutdown();
-                System.err.println("Thread is stopped");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-    }
-
 }
 

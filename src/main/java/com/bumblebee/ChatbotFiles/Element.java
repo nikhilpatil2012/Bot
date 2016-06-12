@@ -3,12 +3,30 @@ package com.bumblebee.ChatbotFiles;
 /**
  * Created by deadcode on 04/06/2016.
  */
-public class Place {
+public class Element {
 
+    private String id;
     private String title;
     private String subtitle;
     private String rating;
-    private String url;
+    private String imageUrl;
+    private String detailUrl;
+
+    public String getDetailUrl() {
+        return detailUrl;
+    }
+
+    public void setDetailUrl(String detailUrl) {
+        this.detailUrl = detailUrl;
+    }
+
+    public String getId() {
+        return id;
+    }
+    
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -34,11 +52,11 @@ public class Place {
         this.rating = rating;
     }
 
-    public String getUrl() {
-        return url;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setImageUrl(String url) {
+        this.imageUrl = url;
     }
 }
