@@ -27,6 +27,5 @@ public class MultiPartBodyWithMessage extends MultiPartCustom{
         keyValueList.clear();
         keyValueList.put("text", getMessage().getMessage());
         addMessage("message", getJsonObject(keyValueList));
-
     }
 }

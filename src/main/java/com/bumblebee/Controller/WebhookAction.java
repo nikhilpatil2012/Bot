@@ -2,15 +2,18 @@ package com.bumblebee.Controller;
 
 import com.bumblebee.ChatbotFiles.ChatParser;
 import com.bumblebee.ChatbotFiles.MessageMiner;
-import com.bumblebee.ChatbotFiles.Query;
 import com.bumblebee.ChatbotFiles.ResponseExecuter;
-import com.bumblebee.common.utils.StatusCodes;
-import com.bumblebee.common.utils.WatsonCallback;
-import com.mashape.unirest.http.Unirest;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.bumblebee.ClientMessage.ClientMessage;
+import com.bumblebee.ConverstationFiles.Conversation;
+import com.bumblebee.ConverstationFiles.ConversationCntrl;
+import com.bumblebee.ConverstationFiles.ConversationHandler;
+import com.bumblebee.ResponseToClient.ResponseAction;
+import com.bumblebee.ResponseToClient.ResponseActionFactory;
+import com.bumblebee.ResponseToClient.ResponseActionResult;
+import com.bumblebee.common.utils.Const;
+import com.bumblebee.common.utils.ConversationPool;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.util.HashMap;
 
 /**
@@ -40,8 +43,8 @@ public class WebhookAction extends Action {
                     if(paramMap.get("hub.verify_token").equals("Charlie123")){
 
                         response = paramMap.get("hub.challenge");
-                    }
 
+                    }
                 }
 
             }break;
@@ -61,7 +64,25 @@ public class WebhookAction extends Action {
 
                 System.err.println(response);
 
-                chatParser.parseText(response.toString());
+                ClientMessage clientMessage = parseMessageFromClient(response);
+
+                System.out.println("SenderId "+clientMessage.getSenderId());
+                System.out.println("Message Type "+clientMessage.getMessageType());
+
+
+                ConversationHandler conversationHandler = new ConversationHandler(clientMessage);
+
+                Conversation nextConversation = conversationHandler.getConversation();
+
+                System.out.println("Cov. Code "+nextConversation.getCode());
+
+                ResponseAction responseAction = new ResponseActionFactory().getAction(nextConversation);
+
+                ResponseActionResult responseActionResult = responseAction.execute();
+
+                responseActionResult.sendMessage();
+
+                /*chatParser.parseText(response.toString());
 
                 if(chatParser.getMessageType() != null){
                     System.err.println("Message Type "+chatParser.getMessageType());
@@ -79,9 +100,8 @@ public class WebhookAction extends Action {
                             }
                         });
                     }
-                }
+                }*/
 
-                System.err.println(response);
 
             }break;
         }

@@ -23,7 +23,6 @@ public class MultiPartBodyWithPayload extends MultiPartCustom{
           System.out.println(element.getTitle());
           System.out.println(element.getSubtitle());
 
-
         }
 
         // JSON 1 :- Key -- "recipient"

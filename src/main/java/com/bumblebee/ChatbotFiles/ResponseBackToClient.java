@@ -23,7 +23,6 @@ public class ResponseBackToClient {
 
         // Testing
 
-
         //!!!!!!!!!!!!//
 
         MultipartBody body = null;
@@ -41,6 +40,7 @@ public class ResponseBackToClient {
         }
 
         Future<HttpResponse<JsonNode>> postClient = multipartBody.asJsonAsync(new Callback<JsonNode>() {
+
             @Override
             public void completed(HttpResponse<JsonNode> httpResponse) {
                 System.out.println(httpResponse.getBody());
@@ -56,5 +56,6 @@ public class ResponseBackToClient {
 
             }
         });
+
     }
 }

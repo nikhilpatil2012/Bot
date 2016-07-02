@@ -36,7 +36,6 @@ public class ChatParser {
                     message = jsonObject.getJSONObject("message").getString("text");
                     queryMessage = message.replace(" ", "+");
                  }
-
              }
          }
     }
