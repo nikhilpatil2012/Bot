@@ -1,5 +1,8 @@
 package com.bumblebee.ResponseToClient;
 
+import com.bumblebee.Controller.Action;
+import com.bumblebee.ConverstationFiles.Conversation;
+import com.bumblebee.ConverstationFiles.ConversationHandler;
 import com.bumblebee.ResponseToClient.HangoutOptions;
 import com.bumblebee.ResponseToClient.ResponseAction;
 import com.bumblebee.common.utils.Const;
@@ -17,21 +20,28 @@ public class ResponseActionFactory {
     private static HashMap<Integer, Class<? extends ResponseAction>> responseActionMappings = new HashMap<>();
 
     static {
-
         map(ConversationCodes.SHOW_HANGOUT_OPTIONS, HangoutOptions.class);
+        map(ConversationCodes.SEND_TEXT_TO_CLIENT, SendTextToClient.class);
 
     }
 
-    public ResponseAction getAction(int code){
+    public ResponseAction getAction(Conversation conversation){
 
-        Class<? extends ResponseAction> controllerClass;
+        int nextConversationCode = conversation.getCode();
 
-           if(ConversationPool.codeList.containsKey(code)){
-               controllerClass = HangoutOptions.class;
-           }
-             else {
-               controllerClass = responseActionMappings.get(code);
-           }
+        if(ConversationPool.codeList.containsKey(nextConversationCode)){
+            nextConversationCode = ConversationCodes.SEND_TEXT_TO_CLIENT;
+        }
+
+        ResponseAction action = getAction(nextConversationCode);
+        action.init(conversation);
+
+        return action;
+    }
+
+    private static ResponseAction getAction(int code){
+
+        Class<? extends ResponseAction> controllerClass = responseActionMappings.get(code);
 
         try {
             return controllerClass.newInstance();
