@@ -23,17 +23,25 @@ public class ConversationHandler {
         // Returning User
         if(Const.activeSessions.keySet().contains(clientMessage.getSenderId())){
 
-            ConversationCntrl conversationCntrl = Const.activeSessions.get(clientMessage.getSenderId());
+            if(clientMessage.getMessageType().compareTo(Const.ClientMessageType.Delivery) == 0){
+                ConversationCntrl conversationCntrl = Const.activeSessions.get(clientMessage.getSenderId());
 
-            // Check next step
-            int nextStep = conversationCntrl.getStep() + 1;
+                // Check next step
+                int nextStep = conversationCntrl.getStep() + 1;
 
-            // Check if more conversation is left
-            if(ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size() > nextStep){
+                System.out.println("Next Step "+nextStep);
+                System.out.println("Pool Size "+ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size());
 
-                // More steps are left
-                conversation = ConversationPool.poolList.get(conversationCntrl.getClientStateType()).get(nextStep);
 
+                // Check if more conversation is left
+                if(ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size() > nextStep){
+
+                    // More steps are left
+                    conversation = ConversationPool.poolList.get(conversationCntrl.getClientStateType()).get(nextStep);
+
+                    conversationCntrl.setClientMessageType(conversation.getType());
+                    conversationCntrl.setStep(nextStep);
+                }
             }
 
 /*            // Process Postback
