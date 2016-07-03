@@ -74,7 +74,7 @@ public class WebhookAction extends Action {
                     System.out.println("Message Text "+clientMessage.getMessageText());
                 }
 
-                if(clientMessage.getMessageText().equals("Hey")){
+         /*       if(clientMessage.getMessageText().equals("Hey")){
 
                     ConversationHandler conversationHandler = new ConversationHandler(clientMessage);
 
@@ -87,7 +87,7 @@ public class WebhookAction extends Action {
                     ResponseActionResult responseActionResult = responseAction.execute();
 
                     responseActionResult.sendMessage();
-                }
+                }*/
 
 
 /**/
