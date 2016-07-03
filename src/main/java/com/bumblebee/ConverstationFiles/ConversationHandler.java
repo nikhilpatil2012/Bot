@@ -4,6 +4,8 @@ import com.bumblebee.ClientMessage.ClientMessage;
 import com.bumblebee.common.utils.Const;
 import com.bumblebee.common.utils.ConversationPool;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by deadcode on 27/06/2016.
  */
@@ -32,6 +34,11 @@ public class ConversationHandler {
                 System.out.println("Next Step "+nextStep);
                 System.out.println("Pool Size "+ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size());
 
+                try {
+                    TimeUnit.SECONDS.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
                 // Check if more conversation is left
                 if(ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size() > nextStep){
