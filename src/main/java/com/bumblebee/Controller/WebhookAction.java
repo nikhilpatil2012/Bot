@@ -62,13 +62,17 @@ public class WebhookAction extends Action {
 
                 response = jb.toString();
 
-              //  System.err.println(response);
+                System.err.println(response);
 
                ClientMessage clientMessage = parseMessageFromClient(response);
 
                 System.out.println("SenderId "+clientMessage.getSenderId());
                 System.out.println("Message Type "+clientMessage.getMessageType());
-                System.out.println("Message Text "+clientMessage.getMessageText());
+
+                if(clientMessage.getMessageText() != null){
+
+                    System.out.println("Message Text "+clientMessage.getMessageText());
+                }
 
                 if(clientMessage.getMessageText().equals("Hey")){
 
