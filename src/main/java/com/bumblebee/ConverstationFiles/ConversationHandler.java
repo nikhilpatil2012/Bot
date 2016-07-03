@@ -23,6 +23,19 @@ public class ConversationHandler {
         // Returning User
         if(Const.activeSessions.keySet().contains(clientMessage.getSenderId())){
 
+            ConversationCntrl conversationCntrl = Const.activeSessions.get(clientMessage.getSenderId());
+
+            // Check next step
+            int nextStep = conversationCntrl.getStep() + 1;
+
+            // Check if more conversation is left
+            if(ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size() > nextStep){
+
+                // More steps are left
+                conversation = ConversationPool.poolList.get(conversationCntrl.getClientStateType()).get(nextStep);
+
+            }
+
 /*            // Process Postback
             if(clientMessage.getMessageType().compareTo(Const.ClientMessageType.Postback) == 0){
 
@@ -31,7 +44,7 @@ public class ConversationHandler {
             }*/
 
             // Process Delivery
-            if(clientMessage.getMessageType().compareTo(Const.ClientMessageType.Delivery) == 0){
+    /*        if(clientMessage.getMessageType().compareTo(Const.ClientMessageType.Delivery) == 0){
 
                 ConversationCntrl conversationCntrl = Const.activeSessions.get(clientMessage.getSenderId());
 
@@ -48,7 +61,7 @@ public class ConversationHandler {
 
                 // Process the conversation
 
-            }
+            }*/
 
         }
           else { // New User

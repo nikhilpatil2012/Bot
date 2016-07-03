@@ -74,6 +74,12 @@ public class WebhookAction extends Action {
                     System.out.println("Message Text "+clientMessage.getMessageText());
                 }
 
+                ConversationHandler conversationHandler = new ConversationHandler(clientMessage);
+
+                Conversation nextConversation = conversationHandler.getConversation();
+
+                System.out.println("Cov. Code "+nextConversation.getCode());
+
          /*       if(clientMessage.getMessageText().equals("Hey")){
 
                     ConversationHandler conversationHandler = new ConversationHandler(clientMessage);
