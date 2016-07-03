@@ -27,7 +27,7 @@ public class ConversationHandler {
 
             if(clientMessage.getMessageType().compareTo(Const.ClientMessageType.TextWithAttach) == 0){
 
-                if(clientMessage.getAttachmentType().compareTo(Const.AttachmentType.location) == 0){
+                if(clientMessage.getAttachmentType().equals(Const.AttachmentType.location.name())){
 
                 }
             }

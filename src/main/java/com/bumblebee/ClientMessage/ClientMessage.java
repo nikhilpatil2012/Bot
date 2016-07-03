@@ -8,9 +8,8 @@ import com.bumblebee.common.utils.Const;
 public class ClientMessage {
 
     private String pageID, timestamp, senderId, recipientId,
-    messageText, attachmentUrl, postBackId;
+    messageText, attachmentType, attachmentUrl, postBackId;
 
-    private Const.AttachmentType attachmentType;
     private long watermark;
     private double lat=0.0, lng=0.0;
 
@@ -73,11 +72,11 @@ public class ClientMessage {
         this.messageText = messageText;
     }
 
-    public Const.AttachmentType getAttachmentType() {
+    public String getAttachmentType() {
         return attachmentType;
     }
 
-    public void setAttachmentType(Const.AttachmentType attachmentType) {
+    public void setAttachmentType(String attachmentType) {
         this.attachmentType = attachmentType;
     }
 
