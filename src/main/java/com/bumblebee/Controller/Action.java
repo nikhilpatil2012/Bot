@@ -25,7 +25,7 @@ public abstract class Action  {
     private static HashMap<String, Class<?>> map = new HashMap<String, Class<?>>();
 
     static {
-        map.put("User_Model", User.class);
+        map.put("webhook", WebhookAction.class);
     }
 
     public ShowPageResult createShowPageResult(String data){
