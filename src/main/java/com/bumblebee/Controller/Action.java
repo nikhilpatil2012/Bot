@@ -68,7 +68,7 @@ public abstract class Action  {
         return paramMap;
     }
 
-    public ClientMessage parseMessageFromClient(String json){
+    public  ClientMessage parseMessageFromClient(String json){
 
         JSONObject jsonObject = new JSONObject(json);
         JSONArray jsonArray;
@@ -110,14 +110,34 @@ public abstract class Action  {
                             clientMessage.setAttachmentType(jsonObject.getString("type"));
                         }
 
-                        if(!jsonObject.isNull("payload") && !(jsonObject = jsonObject.getJSONObject("payload")).isNull("url")){
-                            clientMessage.setAttachmentUrl(jsonObject.getString("url"));
-                        }
-                    }
+                           // Payload is present
+                        if(!jsonObject.isNull("payload")){
 
-                    System.out.println(clientMessage.getMessageType());
-                    System.out.println(clientMessage.getAttachmentType());
-                    System.out.println(clientMessage.getAttachmentUrl());
+                            // Get Payload
+                            jsonObject = jsonObject.getJSONObject("payload");
+
+                            // Payload is image
+                            if(clientMessage.getAttachmentType().equals(Const.AttachmentType.image.name()) && !jsonObject.isNull("url")){
+
+                                clientMessage.setAttachmentUrl(jsonObject.getString("url"));
+
+                            }
+                              // Payload is location
+                            else if(clientMessage.getAttachmentType().equals(Const.AttachmentType.location.name()) && !jsonObject.isNull("coordinates")){
+
+                                  // Get coordinates object
+                                jsonObject = jsonObject.getJSONObject("coordinates");
+
+                                if(!jsonObject.isNull("lat") && !jsonObject.isNull("long")){
+
+                                    clientMessage.setLat(jsonObject.getDouble("lat"));
+                                    clientMessage.setLng(jsonObject.getDouble("long"));
+
+                                  }
+                            }
+                        }
+
+                    }
                 }
 
                 // Parse Delivery Message

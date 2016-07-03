@@ -24,7 +24,6 @@ public class ConversationPool {
         StartPool.add(new Conversation(Const.ClientMessageType.Text, 101));
         StartPool.add(new Conversation(Const.ClientMessageType.Text, 102));
         StartPool.add(new Conversation(Const.ClientMessageType.Text, 103));
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 104));
         StartPool.add(new Conversation(Const.ClientMessageType.Text, ConversationCodes.SHOW_HANGOUT_OPTIONS));
     }
 

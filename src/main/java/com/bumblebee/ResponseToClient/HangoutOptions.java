@@ -22,10 +22,10 @@ public class HangoutOptions extends ResponseAction{
         //Create JSON
 
         ArrayList<Element> elementArrayList = new ArrayList<>();
-        elementArrayList.add(new Element("Cafe", "Coffee", "http://petersapparel.parseapp.com/img/item100-thumb.png", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Cafe", ConversationCodes.Cafe)})));
-        elementArrayList.add(new Element("Bar", "Party", "http://petersapparel.parseapp.com/img/item100-thumb.png", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Bars", ConversationCodes.Bar)})));
-        elementArrayList.add(new Element("Dine", "Food", "http://petersapparel.parseapp.com/img/item100-thumb.png", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Dine", ConversationCodes.Dine)})));
-        elementArrayList.add(new Element("Attractions", "Fun", "http://petersapparel.parseapp.com/img/item100-thumb.png", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Attractions",ConversationCodes.Attraction)})));
+        elementArrayList.add(new Element("Cafe", "Coffee", "http://www.clker.com/cliparts/d/4/d/9/1237562201214390563pitr_Coffee_cup_icon.svg", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Cafe", ConversationCodes.Cafe)})));
+        elementArrayList.add(new Element("Bar", "Party", "https://image.freepik.com/free-icon/wine-glasses_318-80863.png", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Bars", ConversationCodes.Bar)})));
+        elementArrayList.add(new Element("Dine", "Food", "http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/magic-marker-icons-food-beverage/115502-magic-marker-icon-food-beverage-knife-fork-sc44.png", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Dine", ConversationCodes.Dine)})));
+        elementArrayList.add(new Element("Attractions", "Fun", "http://i.giphy.com/l4HodBpDmoMA5p9bG.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Attractions",ConversationCodes.Attraction)})));
 
         Payload payload = new Payload(Const.PayloadType.generic, new ElementJSONCntlr(elementArrayList));
 

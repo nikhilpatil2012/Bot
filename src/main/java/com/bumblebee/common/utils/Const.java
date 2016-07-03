@@ -36,8 +36,9 @@ public class Const {
         web_url, postback
     }
 
-    public static enum AttachmentType{
-        template, image
+
+    public  static enum AttachmentType{
+        template, image, location
     }
 
     public static enum PayloadType{

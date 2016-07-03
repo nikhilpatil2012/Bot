@@ -9,6 +9,9 @@ public class Conversation {
 
     private Const.ClientMessageType type;
     private int code;
+    private double lat = 0.0;
+    private double lng = 0.0;
+
 
     public Conversation(Const.ClientMessageType type, int code){
         this.type = type;
@@ -21,5 +24,21 @@ public class Conversation {
 
     public int getCode() {
         return code;
+    }
+
+    public double getLat() {
+        return lat;
+    }
+
+    public double getLng() {
+        return lng;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public void setLng(double lng) {
+        this.lng = lng;
     }
 }

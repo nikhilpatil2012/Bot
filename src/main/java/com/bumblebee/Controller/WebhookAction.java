@@ -69,6 +69,16 @@ public class WebhookAction extends Action {
                 System.out.println("SenderId "+clientMessage.getSenderId());
                 System.out.println("Message Type "+clientMessage.getMessageType());
 
+                if(clientMessage.getMessageType().compareTo(Const.ClientMessageType.TextWithAttach) == 0){
+
+                    System.out.println("Message Type "+clientMessage.getAttachmentType());
+
+                    if(clientMessage.getLat() != 0){
+                        System.out.println("Message Lat "+clientMessage.getLat());
+                        System.out.println("Message Lng "+clientMessage.getLng());
+                    }
+                }
+
                 if(clientMessage.getMessageText() != null){
 
                     System.out.println("Message Text "+clientMessage.getMessageText());
