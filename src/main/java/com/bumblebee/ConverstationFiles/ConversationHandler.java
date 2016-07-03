@@ -34,11 +34,6 @@ public class ConversationHandler {
                 System.out.println("Next Step "+nextStep);
                 System.out.println("Pool Size "+ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size());
 
-                try {
-                    TimeUnit.SECONDS.sleep(5);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
 
                 // Check if more conversation is left
                 if(ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size() > nextStep){
