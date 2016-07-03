@@ -64,7 +64,7 @@ public class WebhookAction extends Action {
 
                 System.err.println(response);
 
-/*                ClientMessage clientMessage = parseMessageFromClient(response);
+                ClientMessage clientMessage = parseMessageFromClient(response);
 
                 System.out.println("SenderId "+clientMessage.getSenderId());
                 System.out.println("Message Type "+clientMessage.getMessageType());
@@ -80,7 +80,7 @@ public class WebhookAction extends Action {
 
                 ResponseActionResult responseActionResult = responseAction.execute();
 
-                responseActionResult.sendMessage();*/
+                responseActionResult.sendMessage();
 
                 /*chatParser.parseText(response.toString());
 
