@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="151ca84f-c993-45dd-a6c2-d081244ba22e" name="Default" comment="" />
+    <list default="true" id="151ca84f-c993-45dd-a6c2-d081244ba22e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/GetUserProfile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Postback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bumblebee/Controller/Action.class" afterPath="$PROJECT_DIR$/target/classes/com/bumblebee/Controller/Action.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bumblebee/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/bumblebee/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/BumblebeeApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/BumblebeeApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/Action.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Conversation.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Conversation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/model/User.java" />
+    </list>
     <ignored path="assignment.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,32 +41,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HangoutOptions.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java">
+      <file leaf-file-name="ConversationCodes.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.047923323">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.74533105">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Const.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="89" selection-start-line="47" selection-start-column="89" selection-end-line="47" selection-end-column="89" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/Action.java">
+      <file leaf-file-name="Postback.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Postback.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java">
+      <file leaf-file-name="ConversationPool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseActionFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+              <folding>
+                <element signature="docComment;class#ResponseActionFactory#0" expanded="false" />
+                <element signature="method#map#0;class#ResponseActionFactory#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +100,15 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="96" selection-start-line="29" selection-start-column="96" selection-end-line="29" selection-end-column="96" />
-              <folding />
+              <caret line="52" column="77" selection-start-line="52" selection-start-column="77" selection-end-line="52" selection-end-column="77" />
+              <folding>
+                <element signature="docComment;class#ConversationHandler#0" expanded="false" />
+                <element signature="e#2075#2086#0" expanded="false" />
+                <element signature="class#2902:3391" expanded="false" />
+                <element signature="method#getUserCallback#0;class#2902:3391" expanded="false" />
+                <element signature="method#moveConversation#0;class#ConversationHandler#0" expanded="false" />
+                <element signature="e#3957#3979#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,8 +118,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -79,11 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/CreateMessageForClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/Place.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/PlaceListCallback.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/CommentHandling.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/MultiPartCustom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/FbGenericTemp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/ResponseExecuter.java" />
@@ -112,24 +157,29 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/ResponseActionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/TextHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/SendText.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/HandlerAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/database/DBManager.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/SendTextToClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Postback.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Conversation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/Action.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/BumblebeeApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Conversation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/GetUserProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/GetUserProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java" />
       </list>
     </option>
   </component>
@@ -179,8 +229,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -529,7 +579,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -537,7 +587,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="Clie&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;Hang&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java&#10;ClientM&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;ClientMes&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;CHa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ChatbotFiles/ChatParser.java&#10;Me&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java&#10;Sta&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/StatusCodes.java&#10;User&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/database/DAO/UserDAO.java&#10;Act&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/Controller/ActionFactory.java&#10;UserA&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/Controller/UserAction.java" />
+    <property name="SearchEverywhereHistoryKey" value="Convers&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;COnversa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Con&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java&#10;Conversa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationCodes.java&#10;We&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;Resp&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java&#10;Conve&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;COnve&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java&#10;Get&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/GetUserProfile.java&#10;Conver&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java&#10;Action&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/Action.java&#10;Post&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/Postback.java&#10;Clie&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;Hang&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java&#10;ClientM&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;ClientMes&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;CHa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ChatbotFiles/ChatParser.java&#10;Me&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java&#10;Sta&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/StatusCodes.java&#10;User&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/database/DAO/UserDAO.java&#10;Act&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/Controller/ActionFactory.java&#10;UserA&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/Controller/UserAction.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -780,35 +830,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24151857" sideWeight="0.49033818" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65645164" sideWeight="0.503231" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44732577" sideWeight="0.49676898" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24151857" sideWeight="0.49033818" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24151857" sideWeight="0.50966185" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44732577" sideWeight="0.49676898" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3273906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -853,27 +903,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/model/ResponseMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54635763">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/model/ResponseAsToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17384106">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/model/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24834438">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/likethecolor/alchemy/1.2.0/alchemy-1.2.0.jar!/com/likethecolor/alchemy/api/call/RankedTaxonomyCall.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18421052">
@@ -888,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/WatsonCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22727273">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ChatbotFiles/Element.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43074325">
@@ -906,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4712838">
           <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,10 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5320946">
           <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding>
-            <element signature="e#607#608#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -925,9 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3820034">
           <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding>
-            <element signature="docComment;class#ChatParser#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30560273">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327674">
           <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,10 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#755#756#0" expanded="false" />
-            <element signature="e#784#785#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,21 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58573854">
           <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationToJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7461929">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#388#389#0" expanded="false" />
-            <element signature="e#436#437#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -984,10 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56852794">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#1016#1017#0" expanded="false" />
-            <element signature="e#1060#1061#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -995,9 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,10 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7385399">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#742#743#0" expanded="false" />
-            <element signature="e#780#781#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,15 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6943973">
           <caret line="38" column="44" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="44" />
-          <folding>
-            <element signature="docComment;class#ButtonJSONCntlr#0" expanded="false" />
-            <element signature="e#385#386#0" expanded="false" />
-            <element signature="e#439#440#0" expanded="false" />
-            <element signature="e#492#493#0" expanded="false" />
-            <element signature="e#540#541#0" expanded="false" />
-            <element signature="method#getButtonsJsonFromArray#0;class#ButtonJSONCntlr#0" expanded="false" />
-            <element signature="method#getJsonObject#0;class#ButtonJSONCntlr#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,9 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.0882852">
           <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-          <folding>
-            <element signature="method#createQuery#0;class#MessageMiner#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0118846">
           <caret line="67" column="68" selection-start-line="67" selection-start-column="68" selection-end-line="67" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12733446">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7360406">
           <caret line="79" column="75" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,10 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7106599">
           <caret line="79" column="27" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="27" />
-          <folding>
-            <element signature="e#332#333#0" expanded="false" />
-            <element signature="e#365#366#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.79286927">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.22241087">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,17 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54159594">
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61120546">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="e#815#816#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,13 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54159594">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#722#723#0" expanded="false" />
-            <element signature="e#755#756#0" expanded="false" />
-            <element signature="e#787#788#0" expanded="false" />
-            <element signature="e#814#815#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1148,19 +1090,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4074703">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28318584">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1180,60 +1113,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61120546">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.516129">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding>
-            <element signature="docComment;class#ResponseActionFactory#0" expanded="false" />
-            <element signature="method#map#0;class#ResponseActionFactory#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.229202">
           <caret line="381" column="16" selection-start-line="381" selection-start-column="16" selection-end-line="381" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38879457">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Conversation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6434635">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/BumblebeeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3565365">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43972835">
+          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+          <folding>
+            <element signature="docComment;class#Action#0" expanded="false" />
+            <element signature="initializer##0;class#Action#0" expanded="false" />
+            <element signature="method#createShowPageResult#0;class#Action#0" expanded="false" />
+            <element signature="method#init#0;class#Action#0" expanded="false" />
+            <element signature="method#getUrlParameter#0;class#Action#0" expanded="false" />
+            <element signature="method#parseMessageFromClient#0;class#Action#0" expanded="false" />
+            <element signature="method#parseAuthentication#0;class#Action#0" expanded="false" />
+            <element signature="method#parseMessage#0;class#Action#0" expanded="false" />
+            <element signature="method#parseText#0;class#Action#0" expanded="false" />
+            <element signature="method#parseDeliveryConfirmation#0;class#Action#0" expanded="false" />
+            <element signature="method#parsePostback#0;class#Action#0" expanded="false" />
+            <element signature="method#parseAttachment#0;class#Action#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationToJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6876061">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/UserProfileCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22920203">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74533105">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#788#789#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/GetUserProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41426146">
+          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5925297">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/WatsonCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22920203">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8149406">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.2801358">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding>
-            <element signature="e#657#658#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="e#1436#1437#0" expanded="false" />
-            <element signature="e#1510#1511#0" expanded="false" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50933784">
+          <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82173175">
+          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+          <folding>
+            <element signature="docComment;class#ConversationCntrl#0" expanded="false" />
+            <element signature="method#setClientMessageType#0;class#ConversationCntrl#0" expanded="false" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2388#2389#0" expanded="true" />
+            <element signature="e#2432#2433#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/SendTextToClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45840406">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.30560273">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12733446">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.74533105">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="89" selection-start-line="47" selection-start-column="89" selection-end-line="47" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Postback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1241,82 +1303,34 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61120546">
-          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.516129">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/BumblebeeApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12733446">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Conversation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86587435">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding>
-            <element signature="e#510#511#0" expanded="false" />
-            <element signature="e#537#538#0" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#623#624#0" expanded="false" />
-            <element signature="e#649#650#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#755#756#0" expanded="false" />
-            <element signature="e#785#786#0" expanded="false" />
+            <element signature="docComment;class#ResponseActionFactory#0" expanded="false" />
+            <element signature="method#map#0;class#ResponseActionFactory#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="96" selection-start-line="29" selection-start-column="96" selection-end-line="29" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047923323">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+          <caret line="52" column="77" selection-start-line="52" selection-start-column="77" selection-end-line="52" selection-end-column="77" />
+          <folding>
+            <element signature="docComment;class#ConversationHandler#0" expanded="false" />
+            <element signature="e#2075#2086#0" expanded="false" />
+            <element signature="class#2902:3391" expanded="false" />
+            <element signature="method#getUserCallback#0;class#2902:3391" expanded="false" />
+            <element signature="method#moveConversation#0;class#ConversationHandler#0" expanded="false" />
+            <element signature="e#3957#3979#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

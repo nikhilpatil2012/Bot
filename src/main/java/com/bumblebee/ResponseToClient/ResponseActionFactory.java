@@ -2,6 +2,7 @@ package com.bumblebee.ResponseToClient;
 
 import com.bumblebee.Controller.Action;
 import com.bumblebee.ConverstationFiles.Conversation;
+import com.bumblebee.ConverstationFiles.ConversationCntrl;
 import com.bumblebee.ConverstationFiles.ConversationHandler;
 import com.bumblebee.ResponseToClient.HangoutOptions;
 import com.bumblebee.ResponseToClient.ResponseAction;
@@ -25,7 +26,9 @@ public class ResponseActionFactory {
 
     }
 
-    public ResponseAction getAction(Conversation conversation){
+    public ResponseAction getAction(ConversationCntrl conversationCntrl){
+
+        Conversation conversation = conversationCntrl.getConversation();
 
         int nextConversationCode = conversation.getCode();
 
@@ -34,7 +37,7 @@ public class ResponseActionFactory {
         }
 
         ResponseAction action = getAction(nextConversationCode);
-        action.init(conversation);
+        action.init(conversationCntrl);
 
         return action;
     }

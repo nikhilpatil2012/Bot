@@ -2,6 +2,8 @@ package com.bumblebee;
 
 import com.bumblebee.ClientMessage.ClientMessage;
 import com.bumblebee.Controller.Action;
+import com.bumblebee.ConverstationFiles.Conversation;
+import com.bumblebee.ConverstationFiles.ConversationHandler;
 import com.bumblebee.ResponseToClient.ResponseActionFactory;
 import com.bumblebee.ResponseToClient.ResponseAction;
 import com.bumblebee.ResponseToClient.ResponseActionResult;

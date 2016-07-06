@@ -45,6 +45,8 @@ public class Const {
         basic, button, generic
     }
 
+    public static String[] foodTypes =  {"Chinese", "Indian", "Thai", "Italian", "Mexican"};
+
 
 
     public static HashMap<String, ConversationCntrl> activeSessions = new HashMap<>();

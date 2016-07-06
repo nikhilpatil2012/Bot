@@ -10,6 +10,11 @@ public class ConversationCntrl {
     private Const.ClientMessageType clientMessageType;
     private Const.ClientStateType clientStateType;
     private int step;
+    private boolean mvNext = false;
+    private double lat = 0.0;
+    private double lng = 0.0;
+    private String userId, firstName, lastName, gender, postbackId;
+    private Conversation conversation;
 
 
     public Const.ClientMessageType getClientMessageType() {
@@ -35,4 +40,77 @@ public class ConversationCntrl {
     public void setStep(int step) {
         this.step = step;
     }
+
+    public boolean isMvNext() {
+        return mvNext;
+    }
+
+    public void setMvNext(boolean mvNext) {
+        this.mvNext = mvNext;
+    }
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLng() {
+        return lng;
+    }
+
+    public void setLng(double lng) {
+        this.lng = lng;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Conversation getConversation() {
+        return conversation;
+    }
+
+    public void setConversation(Conversation conversation) {
+        this.conversation = conversation;
+    }
+
+    public String getPostbackId() {
+        return postbackId;
+    }
+
+    public void setPostbackId(String postbackId) {
+        this.postbackId = postbackId;
+    }
 }
+

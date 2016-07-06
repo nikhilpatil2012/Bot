@@ -2,6 +2,7 @@ package com.bumblebee.ResponseToClient;
 
 
 import com.bumblebee.ConverstationFiles.Conversation;
+import com.bumblebee.ConverstationFiles.ConversationCntrl;
 import com.bumblebee.common.utils.ConversationPool;
 
 /**
@@ -14,12 +15,12 @@ public abstract class ResponseAction {
 
     public abstract ResponseActionResult execute();
 
-    public void init(Conversation conversation){
+    public void init(ConversationCntrl conversationCntrl){
 
-        code = conversation.getCode();
+        code = conversationCntrl.getConversation().getCode();
 
-        if(ConversationPool.codeList.containsKey(conversation.getCode())){
-            text = ConversationPool.codeList.get(conversation.getCode());
+        if(ConversationPool.codeList.containsKey(code)){
+            text = String.format(ConversationPool.codeList.get(code), conversationCntrl.getFirstName());
             System.out.println("Text "+text);
         }
 

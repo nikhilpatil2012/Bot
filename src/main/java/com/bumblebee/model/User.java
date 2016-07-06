@@ -16,27 +16,25 @@ import org.springframework.web.multipart.MultipartFile;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
 
-  private String name;
-  private String email;
+  private String firstName;
+  private String lastName;
   private String gender;
 
 
-    public User() {
-    }
-    
-    public User(String name, String email, String gender) {
-        this.name = name;
-        this.email = email;
+    public User(String firstName, String lastName, String gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.gender = gender;
     }
-  
-    public String getName() {
-        return name;
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getLastName() {
+        return lastName;
     }
+
 
     public String getGender() {
         return gender;

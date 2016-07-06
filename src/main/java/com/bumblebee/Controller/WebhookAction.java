@@ -93,7 +93,8 @@ public class WebhookAction extends Action {
                     System.out.println("Cov. Code "+nextConversation.getCode());
 
 
-                    ResponseAction responseAction = new ResponseActionFactory().getAction(nextConversation);
+
+                    ResponseAction responseAction = new ResponseActionFactory().getAction(conversationHandler.getConversationCntrl());
 
                     ResponseActionResult responseActionResult = responseAction.execute();
 

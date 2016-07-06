@@ -13,25 +13,29 @@ public class ConversationPool {
 
     public static HashMap<Integer, String> codeList = new HashMap<>();
     static {
-        codeList.put(101, "Hey");
+        codeList.put(101, "Hey %s");
         codeList.put(102, "I'm bobo, i can help you find awesome places for hangout");
         codeList.put(103, "So, what would you like to do ?");
-        codeList.put(104, "Please share your location or place where you would like to hangout");
+        codeList.put(104, "Sweet..");
+        codeList.put(105, "Please share your location or place where you would like to hangout");
     }
 
     public static ArrayList<Conversation> StartPool = new ArrayList<>();
     static {
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 101));
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 102));
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 103));
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, ConversationCodes.SHOW_HANGOUT_OPTIONS));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, 101, true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, 102, true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, 103, true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Postback, ConversationCodes.SHOW_HANGOUT_OPTIONS, false)); // Expecting a postback
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, 104, true));
+        StartPool.add(new Conversation(Const.ClientMessageType.TextWithAttach, 105, false)); // Expecting a location as an attachment
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, 104, true));
     }
 
     public static ArrayList<Conversation> ReturnPool = new ArrayList<>();
     static {
-        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, 101));
-        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, 103));
-        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, ConversationCodes.SHOW_HANGOUT_OPTIONS));
+        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, 101, true));
+        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, 103, true));
+        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, ConversationCodes.SHOW_HANGOUT_OPTIONS, false));
     }
 
     public static HashMap<Const.ClientStateType, ArrayList<Conversation>> poolList = new HashMap<>();
