@@ -1,40 +1,45 @@
 package com.bumblebee.ConverstationFiles;
 
+import com.bumblebee.common.utils.ConversationCodes;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  * Created by deadcode on 03/07/2016.
  */
 public class Postback {
-    private int code;
-    private int poolCode;
-    private String title;
 
-    public Postback(int code, int poolCode, String title) {
-        this.code = code;
-        this.poolCode = poolCode;
-        this.title = title;
+    private ConversationCodes.PostbackType postbackType;
+    private PostbackButton replyButton;
+    private ArrayList<PostbackButton> buttonsList;
+
+    public Postback(ConversationCodes.PostbackType postbackType, ArrayList<PostbackButton> buttonsList) {
+        this.buttonsList = buttonsList;
+        this.postbackType = postbackType;
     }
 
-    public int getCode() {
-        return code;
+    public PostbackButton getReplyButton() {
+        return replyButton;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setReplyButton(PostbackButton replyButton) {
+        this.replyButton = replyButton;
     }
 
-    public int getPoolCode() {
-        return poolCode;
+    public ArrayList<PostbackButton> getButtonsList() {
+        return buttonsList;
     }
 
-    public void setPoolCode(int poolCode) {
-        this.poolCode = poolCode;
-    }
+    public boolean isButtonPresent(int code){
 
-    public String getTitle() {
-        return title;
-    }
+         for(PostbackButton button : getButtonsList()){
 
-    public void setTitle(String title) {
-        this.title = title;
+              if(button.getCode() == code){
+                  return true;
+              }
+         }
+
+        return false;
     }
 }

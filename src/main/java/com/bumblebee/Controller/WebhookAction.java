@@ -7,6 +7,8 @@ import com.bumblebee.ClientMessage.ClientMessage;
 import com.bumblebee.ConverstationFiles.Conversation;
 import com.bumblebee.ConverstationFiles.ConversationCntrl;
 import com.bumblebee.ConverstationFiles.ConversationHandler;
+import com.bumblebee.MessageFromClient.ClientResponseFactory;
+import com.bumblebee.MessageFromClient.MessageFromClientHandler;
 import com.bumblebee.ResponseToClient.ResponseAction;
 import com.bumblebee.ResponseToClient.ResponseActionFactory;
 import com.bumblebee.ResponseToClient.ResponseActionResult;
@@ -64,7 +66,19 @@ public class WebhookAction extends Action {
 
                 System.err.println(response);
 
-               ClientMessage clientMessage = parseMessageFromClient(response);
+
+                MessageFromClientHandler messageFromClientHandler = new ClientResponseFactory().getHandler(response);
+
+                ResponseActionFactory responseActionFactory = messageFromClientHandler.execute();
+
+                ResponseAction responseAction = responseActionFactory.getAction();
+
+                ResponseActionResult responseActionResult = responseAction.execute();
+
+                responseActionResult.sendMessage();
+
+
+/*               ClientMessage clientMessage = parseMessageFromClient(response);
 
                 System.out.println("SenderId "+clientMessage.getSenderId());
                 System.out.println("Message Type "+clientMessage.getMessageType());
@@ -102,7 +116,7 @@ public class WebhookAction extends Action {
 
                 }
 
-                System.out.println("Thread Count "+Thread.activeCount());
+                System.out.println("Thread Count "+Thread.activeCount());*/
 
 
          /*       if(clientMessage.getMessageText().equals("Hey")){

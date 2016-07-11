@@ -19,6 +19,9 @@ public class HangoutOptions extends ResponseAction{
     @Override
     public ResponseActionResult execute() {
 
+        // Update conversation cntrl with postback
+        updatePostback(ConversationCodes.PostbackType.Hangout_Options);
+
         //Create JSON
 
         ArrayList<Element> elementArrayList = new ArrayList<>();

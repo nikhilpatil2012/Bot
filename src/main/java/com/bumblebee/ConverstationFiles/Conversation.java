@@ -12,11 +12,18 @@ public class Conversation {
     private double lat = 0.0;
     private double lng = 0.0;
     private boolean mvNext = false;
+    private String text;
 
 
     public Conversation(Const.ClientMessageType type, int code, boolean mvNext){
         this.type = type;
         this.code = code;
+        this.mvNext = mvNext;
+    }
+
+    public Conversation(Const.ClientMessageType type, String text, boolean mvNext){
+        this.type = type;
+        this.text = text;
         this.mvNext = mvNext;
     }
 
@@ -50,5 +57,9 @@ public class Conversation {
 
     public void setMvNext(boolean mvNext) {
         this.mvNext = mvNext;
+    }
+
+    public String getText() {
+        return text;
     }
 }

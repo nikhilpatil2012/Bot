@@ -18,44 +18,68 @@ import java.util.HashMap;
  */
 public class ResponseActionFactory {
 
-    private static HashMap<Integer, Class<? extends ResponseAction>> responseActionMappings = new HashMap<>();
+    private ConversationCntrl conversationCntrl;
+
+    public ResponseActionFactory(ConversationCntrl conversationCntrl) {
+        this.conversationCntrl = conversationCntrl;
+    }
+
+    private static HashMap<Const.ClientMessageType, Class<? extends ResponseAction>> responseActionMappings = new HashMap<>();
 
     static {
-        map(ConversationCodes.SHOW_HANGOUT_OPTIONS, HangoutOptions.class);
-        map(ConversationCodes.SEND_TEXT_TO_CLIENT, SendTextToClient.class);
+
+        responseActionMappings.put(Const.ClientMessageType.Text, SendTextToClient.class);
+        responseActionMappings.put(Const.ClientMessageType.Postback, HangoutOptions.class);
 
     }
 
-    public ResponseAction getAction(ConversationCntrl conversationCntrl){
+    public ResponseAction getAction() {
 
-        Conversation conversation = conversationCntrl.getConversation();
+        Conversation conversation = getNextConversation(conversationCntrl);
 
-        int nextConversationCode = conversation.getCode();
-
-        if(ConversationPool.codeList.containsKey(nextConversationCode)){
-            nextConversationCode = ConversationCodes.SEND_TEXT_TO_CLIENT;
-        }
-
-        ResponseAction action = getAction(nextConversationCode);
-        action.init(conversationCntrl);
+        ResponseAction action = getAction(conversation.getType());
+        action.init(conversationCntrl, conversation);
 
         return action;
     }
 
-    private static ResponseAction getAction(int code){
+    private static ResponseAction getAction(Const.ClientMessageType clientMessageType) {
 
-        Class<? extends ResponseAction> controllerClass = responseActionMappings.get(code);
+        Class<? extends ResponseAction> controllerClass = responseActionMappings.get(clientMessageType);
 
         try {
             return controllerClass.newInstance();
         } catch (Exception e) {
-            throw new RuntimeException("Could not create the response action for :" + code);
+            throw new RuntimeException("Could not create the response action for :" + clientMessageType.name());
         }
     }
 
+    private Conversation getNextConversation(ConversationCntrl conversationCntrl) {
 
-    private static void map(Integer code, Class<? extends ResponseAction> responseActionClass) {
-        responseActionMappings.put(code, responseActionClass);
+        Conversation conversation = null;
+
+        // Check next step
+        int nextStep = conversationCntrl.getStep() + 1;
+
+        System.out.println("Next Step " + nextStep);
+        System.out.println("Pool Size " + ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size());
+
+
+        // Check if more conversation is left and Move Next is true
+        if (ConversationPool.poolList.get(conversationCntrl.getClientStateType()).size() > nextStep && conversationCntrl.isMvNext()) {
+
+            // More steps are left
+
+            //Conversation temp = ConversationPool.poolList.get(conversationCntrl.getClientStateType()).get(nextStep);
+            conversation = ConversationPool.poolList.get(conversationCntrl.getClientStateType()).get(nextStep);
+
+            conversationCntrl.setStep(nextStep);
+            conversationCntrl.setMvNext(conversation.isMvNext());
+
+
+            System.out.println("Move Next " + conversationCntrl.isMvNext());
+        }
+
+        return conversation;
     }
-
 }

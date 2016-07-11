@@ -1,6 +1,9 @@
 package com.bumblebee.ConverstationFiles;
 
 import com.bumblebee.common.utils.Const;
+import com.bumblebee.model.User;
+
+import java.util.ArrayList;
 
 /**
  * Created by deadcode on 26/06/2016.
@@ -15,7 +18,16 @@ public class ConversationCntrl {
     private double lng = 0.0;
     private String userId, firstName, lastName, gender, postbackId;
     private Conversation conversation;
+    private ArrayList<Postback> postbacksList = new ArrayList<>();
+    private User user;
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Const.ClientMessageType getClientMessageType() {
         return clientMessageType;
@@ -111,6 +123,14 @@ public class ConversationCntrl {
 
     public void setPostbackId(String postbackId) {
         this.postbackId = postbackId;
+    }
+
+    public ArrayList<Postback> getPostbacksList() {
+        return postbacksList;
+    }
+
+    public void addPostBack(Postback postback){
+        getPostbacksList().add(postback);
     }
 }
 

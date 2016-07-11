@@ -22,13 +22,13 @@ public class ConversationPool {
 
     public static ArrayList<Conversation> StartPool = new ArrayList<>();
     static {
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 101, true));
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 102, true));
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 103, true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Hey %s", true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "I'm bobo, i can help you find awesome places for hangout %s", true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "So, what would you like to do ?", true));
         StartPool.add(new Conversation(Const.ClientMessageType.Postback, ConversationCodes.SHOW_HANGOUT_OPTIONS, false)); // Expecting a postback
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 104, true));
-        StartPool.add(new Conversation(Const.ClientMessageType.TextWithAttach, 105, false)); // Expecting a location as an attachment
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, 104, true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Sweet..", true));
+        StartPool.add(new Conversation(Const.ClientMessageType.TextWithAttach, "Please share your location or place where you would like to hangout", false)); // Expecting a location as an attachment
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Sweet..", true));
     }
 
     public static ArrayList<Conversation> ReturnPool = new ArrayList<>();

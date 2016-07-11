@@ -2,10 +2,12 @@ package com.bumblebee.ConverstationFiles;
 
 import com.bumblebee.ClientMessage.ClientMessage;
 import com.bumblebee.common.utils.Const;
+import com.bumblebee.common.utils.ConversationCodes;
 import com.bumblebee.common.utils.ConversationPool;
 import com.bumblebee.common.utils.UserProfileCallback;
 import com.bumblebee.model.User;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -49,6 +51,18 @@ public class ConversationHandler {
             // Client sends Postback
             if(clientMessage.getMessageType().compareTo(Const.ClientMessageType.Postback) == 0){
 
+                int clientReply = Integer.valueOf(clientMessage.getPostBackId());
+
+                PostbackButton postbackButton = ConversationCodes.getButtonFromCode(clientReply);
+
+                for(Postback postback : conversationCntrl.getPostbacksList()){
+
+                     if(postback.isButtonPresent(clientReply)){
+
+                         postback.setReplyButton(postbackButton);
+                     }
+                }
+
                 conversationCntrl.setMvNext(true);
                 conversationCntrl.setPostbackId(clientMessage.getPostBackId());
 
@@ -68,35 +82,14 @@ public class ConversationHandler {
 
             // Add to the converstation
 
-            conversationCntrl = new ConversationCntrl();
-            conversationCntrl.setClientMessageType(Const.ClientMessageType.Text);
-            conversationCntrl.setClientStateType(Const.ClientStateType.StartPool);
-            conversationCntrl.setStep(0);
-            conversationCntrl.setMvNext(true);
-
-            conversationCntrl.setUserId(clientMessage.getSenderId());
-
-            Const.activeSessions.put(clientMessage.getSenderId(), conversationCntrl);
-
             // Get the first conversation to send
             conversation = ConversationPool.StartPool.get(0);
-            conversationCntrl.setConversation(conversation);
 
-            GetUserProfile getUserProfile = new GetUserProfile(conversationCntrl);
-            getUserProfile.getUserProfile(new UserProfileCallback() {
-                @Override
-                public void getUserCallback(User user) {
-
-                    conversationCntrl.setFirstName(user.getFirstName());
-                    conversationCntrl.setLastName(user.getLastName());
-                    conversationCntrl.setGender(user.getGender());
-
-                    System.out.println(conversationCntrl.getFirstName()+ conversationCntrl.getLastName()+ conversationCntrl.getGender());
-                }
-            });
+            // Create a fresh conversation controller
+            conversationCntrl = getNewConversationCntrl(conversation);
 
 
-
+            Const.activeSessions.put(clientMessage.getSenderId(), conversationCntrl);
         }
     }
 
@@ -134,4 +127,32 @@ public class ConversationHandler {
     public ConversationCntrl getConversationCntrl() {
         return conversationCntrl;
     }
+
+
+    private ConversationCntrl getNewConversationCntrl(Conversation conversation){
+
+        ConversationCntrl conversationCntrl = new ConversationCntrl();
+        conversationCntrl.setClientMessageType(Const.ClientMessageType.Text);
+        conversationCntrl.setClientStateType(Const.ClientStateType.StartPool);
+        conversationCntrl.setStep(0);
+        conversationCntrl.setMvNext(true);
+        conversationCntrl.setUserId(clientMessage.getSenderId());
+        conversationCntrl.setConversation(conversation);
+
+        GetUserProfile getUserProfile = new GetUserProfile(conversationCntrl);
+        getUserProfile.getUserProfile(new UserProfileCallback() {
+            @Override
+            public void getUserCallback(User user) {
+
+                conversationCntrl.setFirstName(user.getFirstName());
+                conversationCntrl.setLastName(user.getLastName());
+                conversationCntrl.setGender(user.getGender());
+
+                System.out.println(conversationCntrl.getFirstName()+ conversationCntrl.getLastName()+ conversationCntrl.getGender());
+            }
+        });
+
+        return conversationCntrl;
+    }
+
 }
