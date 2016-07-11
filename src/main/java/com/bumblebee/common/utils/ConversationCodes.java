@@ -1,11 +1,7 @@
 package com.bumblebee.common.utils;
 
-import com.bumblebee.ConverstationFiles.Conversation;
-import com.bumblebee.ConverstationFiles.Postback;
 import com.bumblebee.ConverstationFiles.PostbackButton;
 import com.bumblebee.ConverstationFiles.QuickReply;
-import javafx.geometry.Pos;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
