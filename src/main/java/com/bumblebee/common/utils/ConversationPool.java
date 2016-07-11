@@ -20,6 +20,7 @@ public class ConversationPool {
         codeList.put(105, "Please share your location or place where you would like to hangout");
     }
 
+    public static final int SHOW_HANGOUT_OPTIONS = 301;
     public static ArrayList<Conversation> StartPool = new ArrayList<>();
     static {
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "Hey %s", true));
@@ -27,8 +28,8 @@ public class ConversationPool {
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "So, what would you like to do ?", true));
         StartPool.add(new Conversation(Const.ClientMessageType.Postback, ConversationCodes.SHOW_HANGOUT_OPTIONS, false)); // Expecting a postback
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "Sweet..", true));
-        StartPool.add(new Conversation(Const.ClientMessageType.TextWithAttach, "Please share your location or place where you would like to hangout", false)); // Expecting a location as an attachment
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Sweet..", true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Please share your location or place where you would like to hangout", false)); // Expecting a location as an attachment
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Thanks,, Bobo is starting searching", true));
 
     }
 

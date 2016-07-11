@@ -17,6 +17,8 @@ public class ClientResponseFactory {
     static {
         actionMappings.put(Const.ClientMessageType.Delivery.name(), DeliveryHandler.class);
         actionMappings.put(Const.ClientMessageType.Text.name(), TextHandler.class);
+        actionMappings.put(Const.ClientMessageType.Postback.name(), PostbackHandler.class);
+        actionMappings.put(Const.ClientMessageType.TextWithAttach.name(), LocationHandler.class);
     }
 
     private static MessageFromClientHandler getHandlerInstance(Const.ClientMessageType clientMessageType){

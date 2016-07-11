@@ -10,18 +10,13 @@ public class Button {
     private Const.ButtonType buttonType;
     private String webUrl;
     private String title;
-    private int payloadCode;
+    private String payloadCode;
 
-    public Button(Const.ButtonType buttonType, String title, int payloadCode) {
-        this.buttonType = buttonType;
-        this.title = title;
-        this.payloadCode = payloadCode;
-    }
-
-    public Button(Const.ButtonType buttonType, String webUrl, String title) {
+    public Button(Const.ButtonType buttonType, String title, String payloadCode, String webUrl) {
         this.buttonType = buttonType;
         this.webUrl = webUrl;
         this.title = title;
+        this.payloadCode = payloadCode;
     }
 
     public Const.ButtonType getButtonType() {
@@ -36,7 +31,7 @@ public class Button {
         return title;
     }
 
-    public int getPayloadCode() {
+    public String getPayloadCode() {
         return payloadCode;
     }
 }

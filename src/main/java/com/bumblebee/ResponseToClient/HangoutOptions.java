@@ -24,11 +24,14 @@ public class HangoutOptions extends ResponseAction{
 
         //Create JSON
 
+        int masterCode = getConversation().getCode();
+
+
         ArrayList<Element> elementArrayList = new ArrayList<>();
-        elementArrayList.add(new Element("Cafe", "Coffee", "http://i.giphy.com/dGhlifOCTtSdW.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Cafe", ConversationCodes.Cafe)})));
-        elementArrayList.add(new Element("Bar", "Party", "http://i.giphy.com/DlGaTfcMeDmz6.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Bars", ConversationCodes.Bar)})));
-        elementArrayList.add(new Element("Dine", "Food", "http://i.giphy.com/3o85xBgXf4rAt5H7RS.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Dine", ConversationCodes.Dine)})));
-        elementArrayList.add(new Element("Attractions", "Fun", "http://i.giphy.com/11MKLWSDvMVSp2.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Attractions",ConversationCodes.Attraction)})));
+        elementArrayList.add(new Element("Cafe", "Coffee", "http://i.giphy.com/dGhlifOCTtSdW.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Cafe", masterCode+"_Cafe", null)})));
+        elementArrayList.add(new Element("Bar", "Party", "http://i.giphy.com/DlGaTfcMeDmz6.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Bars", masterCode+"_Bar", null)})));
+        elementArrayList.add(new Element("Dine", "Food", "http://i.giphy.com/3o85xBgXf4rAt5H7RS.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Dine", masterCode+"_Dine", null)})));
+        elementArrayList.add(new Element("Attractions", "Fun", "http://i.giphy.com/11MKLWSDvMVSp2.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Attractions", masterCode+"_Attraction", null)})));
 
         Payload payload = new Payload(Const.PayloadType.generic, new ElementJSONCntlr(elementArrayList));
 

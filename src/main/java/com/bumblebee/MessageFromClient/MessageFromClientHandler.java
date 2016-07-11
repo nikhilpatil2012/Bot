@@ -23,4 +23,8 @@ public abstract class MessageFromClientHandler {
     public ConversationCntrl getConversationCntrl() {
         return conversationCntrl;
     }
+
+    public ClientMessage getClientMessage() {
+        return clientMessage;
+    }
 }

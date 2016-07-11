@@ -20,9 +20,18 @@ public class ConversationCntrl {
     private Conversation conversation;
     private ArrayList<Postback> postbacksList = new ArrayList<>();
     private User user;
+    private String hangoutOption;
 
     public User getUser() {
         return user;
+    }
+
+    public String getHangoutOption() {
+        return hangoutOption;
+    }
+
+    public void setHangoutOption(String hangoutOption) {
+        this.hangoutOption = hangoutOption;
     }
 
     public void setUser(User user) {
