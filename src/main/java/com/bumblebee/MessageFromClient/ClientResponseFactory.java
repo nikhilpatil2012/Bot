@@ -13,15 +13,17 @@ import java.util.HashMap;
  */
 public class ClientResponseFactory {
 
-    private static HashMap<Const.ClientMessageType, Class<? extends MessageFromClientHandler>> actionMappings = new HashMap<>();
+    private static HashMap<String, Class<? extends MessageFromClientHandler>> actionMappings = new HashMap<>();
     static {
-        actionMappings.put(Const.ClientMessageType.Delivery, DeliveryHandler.class);
-        actionMappings.put(Const.ClientMessageType.Text, TextHandler.class);
+        actionMappings.put(Const.ClientMessageType.Delivery.name(), DeliveryHandler.class);
+        actionMappings.put(Const.ClientMessageType.Text.name(), TextHandler.class);
     }
 
     private static MessageFromClientHandler getHandlerInstance(Const.ClientMessageType clientMessageType){
 
-        Class<? extends MessageFromClientHandler> controllerClass = actionMappings.get(clientMessageType);
+        System.out.println("CHeck this "+clientMessageType.name());
+
+        Class<? extends MessageFromClientHandler> controllerClass = actionMappings.get(clientMessageType.name());
 
         try {
             return controllerClass.newInstance();

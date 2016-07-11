@@ -24,12 +24,12 @@ public class ResponseActionFactory {
         this.conversationCntrl = conversationCntrl;
     }
 
-    private static HashMap<Const.ClientMessageType, Class<? extends ResponseAction>> responseActionMappings = new HashMap<>();
+    private static HashMap<String, Class<? extends ResponseAction>> responseActionMappings = new HashMap<>();
 
     static {
 
-        responseActionMappings.put(Const.ClientMessageType.Text, SendTextToClient.class);
-        responseActionMappings.put(Const.ClientMessageType.Postback, HangoutOptions.class);
+        responseActionMappings.put(Const.ClientMessageType.Text.name(), SendTextToClient.class);
+        responseActionMappings.put(Const.ClientMessageType.Postback.name(), HangoutOptions.class);
 
     }
 
@@ -45,7 +45,7 @@ public class ResponseActionFactory {
 
     private static ResponseAction getAction(Const.ClientMessageType clientMessageType) {
 
-        Class<? extends ResponseAction> controllerClass = responseActionMappings.get(clientMessageType);
+        Class<? extends ResponseAction> controllerClass = responseActionMappings.get(clientMessageType.name());
 
         try {
             return controllerClass.newInstance();
