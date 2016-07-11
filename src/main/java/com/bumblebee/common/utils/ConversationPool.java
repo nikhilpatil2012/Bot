@@ -29,7 +29,7 @@ public class ConversationPool {
         StartPool.add(new Conversation(Const.ClientMessageType.Postback, ConversationCodes.SHOW_HANGOUT_OPTIONS, false)); // Expecting a postback
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "Sweet..", true));
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "Please share your location or place where you would like to hangout", false)); // Expecting a location as an attachment
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Thanks,, Bobo is starting searching", true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Thanks,, Bobo is finding your awesome place", true));
 
     }
 

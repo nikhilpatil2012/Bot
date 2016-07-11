@@ -12,11 +12,9 @@ import com.bumblebee.MessageFromClient.MessageFromClientHandler;
 import com.bumblebee.ResponseToClient.ResponseAction;
 import com.bumblebee.ResponseToClient.ResponseActionFactory;
 import com.bumblebee.ResponseToClient.ResponseActionResult;
-import com.bumblebee.common.utils.Const;
-import com.bumblebee.common.utils.ConversationPool;
-
 import java.io.BufferedReader;
-import java.util.HashMap;
+import java.util.*;
+
 
 /**
  * Created by deadcode on 29/05/2016.
@@ -71,11 +69,25 @@ public class WebhookAction extends Action {
 
                 ResponseActionFactory responseActionFactory = messageFromClientHandler.execute();
 
-                ResponseAction responseAction = responseActionFactory.getAction();
+                if(responseActionFactory.getConversationCntrl().isMvNext()){
 
-                ResponseActionResult responseActionResult = responseAction.execute();
+                    ResponseAction responseAction = responseActionFactory.getAction();
 
-                responseActionResult.sendMessage();
+                    ResponseActionResult responseActionResult = responseAction.execute();
+
+
+                    Timer timer = new Timer();
+                    timer.schedule(new TimerTask() {
+                        @Override
+                        public void run() {
+
+                             responseActionResult.sendMessage();
+
+                        }
+                    }, 2000);
+
+
+                }
 
 
 /*               ClientMessage clientMessage = parseMessageFromClient(response);

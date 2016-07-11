@@ -11,7 +11,6 @@ public class DeliveryHandler extends MessageFromClientHandler {
     @Override
     public ResponseActionFactory execute() {
 
-
         return new ResponseActionFactory(getConversationCntrl());
     }
 }

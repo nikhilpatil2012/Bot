@@ -22,6 +22,8 @@ public class ResponseActionFactory {
 
     public ResponseActionFactory(ConversationCntrl conversationCntrl) {
         this.conversationCntrl = conversationCntrl;
+
+
     }
 
     private static HashMap<String, Class<? extends ResponseAction>> responseActionMappings = new HashMap<>();
@@ -81,5 +83,9 @@ public class ResponseActionFactory {
         }
 
         return conversation;
+    }
+
+    public ConversationCntrl getConversationCntrl() {
+        return conversationCntrl;
     }
 }
