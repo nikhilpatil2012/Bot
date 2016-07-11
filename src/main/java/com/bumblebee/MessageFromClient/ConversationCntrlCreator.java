@@ -27,7 +27,6 @@ public class ConversationCntrlCreator {
          else {
 
              conversationCntrl = getNewConversationCntrl(clientMessage.getSenderId());
-             System.out.println("First Name := "+conversationCntrl.getFirstName());
 
         }
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="151ca84f-c993-45dd-a6c2-d081244ba22e" name="Default" comment="" />
+    <list default="true" id="151ca84f-c993-45dd-a6c2-d081244ba22e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ConversationCntrlCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ConversationCntrlCreator.java" />
+    </list>
     <ignored path="assignment.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,14 +25,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConversationCodes.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConversationCodes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6587436">
+            <state vertical-scroll-proportion="0.0">
               <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientResponseFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConversationCntrlCreator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ConversationCntrlCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48387095">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,9 +165,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/UserProfileCallback.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ConversationCntrlCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ConversationCntrlCreator.java" />
       </list>
     </option>
   </component>
@@ -1265,14 +1287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ConversationCntrlCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48387095">
-          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/UserProfileCallback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22920203">
@@ -1309,16 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7962648">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45840406">
@@ -1341,11 +1345,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6587436">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ConversationCntrlCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48387095">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
