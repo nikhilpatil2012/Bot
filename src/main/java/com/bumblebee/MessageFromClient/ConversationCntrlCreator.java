@@ -5,6 +5,7 @@ import com.bumblebee.ConverstationFiles.Conversation;
 import com.bumblebee.ConverstationFiles.ConversationCntrl;
 import com.bumblebee.ConverstationFiles.GetUserProfile;
 import com.bumblebee.common.utils.Const;
+import com.bumblebee.common.utils.ConversationPool;
 import com.bumblebee.common.utils.UserProfileCallback;
 import com.bumblebee.model.User;
 
@@ -37,7 +38,7 @@ public class ConversationCntrlCreator {
 
         final ConversationCntrl conversationCntrl = new ConversationCntrl();
         conversationCntrl.setClientMessageType(Const.ClientMessageType.Text);
-        conversationCntrl.setClientStateType(Const.ClientStateType.StartPool);
+        conversationCntrl.setClientStateType(ConversationPool.ClientStateType.StartPool);
         conversationCntrl.setStep(-1);
         conversationCntrl.setMvNext(true);
         conversationCntrl.setUserId(senderId);

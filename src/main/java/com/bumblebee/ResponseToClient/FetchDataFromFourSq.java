@@ -1,5 +1,8 @@
-package com.bumblebee.ChatbotFiles;
+package com.bumblebee.ResponseToClient;
 
+import com.bumblebee.ChatbotFiles.Element;
+import com.bumblebee.ChatbotFiles.Query;
+import com.bumblebee.ChatbotFiles.ResponseBackToClient;
 import com.bumblebee.common.utils.PlaceListCallback;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
@@ -16,7 +19,7 @@ import java.util.concurrent.Future;
  * Created by deadcode on 03/06/2016.
  */
 @Service
-public class FetchDataFromFourSq {
+public class FetchDataFromFourSq{
 
     private Query query;
     ResponseBackToClient responseBackToClient = new ResponseBackToClient();
@@ -27,7 +30,9 @@ public class FetchDataFromFourSq {
 
         this.query = query;
 
-        String url = "https://api.foursquare.com/v2/venues/explore?client_id=J5Y54V5MBQ52ZAHODHCSC4MWYQ5FDXJK1WI1ZUDKFHFHJB5Z&client_secret=YDQRSDZOPJZERXDE0W1ZDDYQGPQVVTHUHRWE25K0HJ1Z1JAA&v=20130815&venuePhotos=1&near="+query.getWhere()+"&query="+query.getWhat();
+         String url = "https://api.foursquare.com/v2/venues/explore?client_id=J5Y54V5MBQ52ZAHODHCSC4MWYQ5FDXJK1WI1ZUDKFHFHJB5Z&client_secret=YDQRSDZOPJZERXDE0W1ZDDYQGPQVVTHUHRWE25K0HJ1Z1JAA&v=20130815&venuePhotos=1&ll="+query.getWhere()+"&query="+query.getWhat();
+
+        System.out.println(url);
 
         Future<HttpResponse<String>> jsonResponse = Unirest.get(url)
                 .asStringAsync(new Callback<String>() {
@@ -63,7 +68,7 @@ public class FetchDataFromFourSq {
 
         System.out.println("Array length "+jsonArray.length());
 
-             for(int i=0; i<jsonArray.length(); i++){
+             for(int i=0; i<5; i++){
 
                  JSONObject jsonObject = jsonArray.getJSONObject(i);
 
@@ -139,4 +144,6 @@ public class FetchDataFromFourSq {
     public ArrayList<Element> getElementList() {
         return elementList;
     }
+
+
 }

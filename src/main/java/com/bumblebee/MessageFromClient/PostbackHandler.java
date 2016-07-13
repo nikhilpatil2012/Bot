@@ -26,6 +26,15 @@ public class PostbackHandler extends MessageFromClientHandler {
 
             case ConversationPool.SHOW_HANGOUT_OPTIONS: {
 
+                if(text.equals("Dine")){
+
+                    // Save Current State
+                    getConversationCntrl().setPreviousState(new State(getConversationCntrl().getClientStateType(), getConversationCntrl().getStep()));
+
+                    // Jump to new state
+                    jumpToNewState(new State(ConversationPool.ClientStateType.FoodPool, -1));
+                }
+
                 getConversationCntrl().setHangoutOption(text);
 
             } break;

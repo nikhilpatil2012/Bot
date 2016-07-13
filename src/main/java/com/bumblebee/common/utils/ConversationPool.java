@@ -10,6 +10,11 @@ import java.util.HashMap;
  */
 public class ConversationPool {
 
+    public static enum ClientStateType{
+
+        StartPool, FoodPool, LocationPool
+
+    }
 
     public static HashMap<Integer, String> codeList = new HashMap<>();
     static {
@@ -21,28 +26,33 @@ public class ConversationPool {
     }
 
     public static final int SHOW_HANGOUT_OPTIONS = 301;
+    public static final int SHOW_FOURSQUARE_OPTIONS = 302;
+
     public static ArrayList<Conversation> StartPool = new ArrayList<>();
     static {
+
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "Hey %s", true));
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "I'm bobo, i can help you find awesome places for hangout", true));
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "So, what would you like to do ?", true));
-        StartPool.add(new Conversation(Const.ClientMessageType.Postback, ConversationCodes.SHOW_HANGOUT_OPTIONS, false)); // Expecting a postback
+        StartPool.add(new Conversation(Const.ClientMessageType.Postback, ConversationPool.SHOW_HANGOUT_OPTIONS, false)); // Expecting a postback
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "Sweet..", true));
         StartPool.add(new Conversation(Const.ClientMessageType.Text, "Please share your location or place where you would like to hangout", false)); // Expecting a location as an attachment
-        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Thanks,, Bobo is finding your awesome place", true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Text, "Thanks for sharing your location,", true));
+        StartPool.add(new Conversation(Const.ClientMessageType.Postback, ConversationPool.SHOW_FOURSQUARE_OPTIONS, true));
 
     }
 
-    public static ArrayList<Conversation> ReturnPool = new ArrayList<>();
+    public static ArrayList<Conversation> FoodPool = new ArrayList<>();
     static {
-        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, 101, true));
-        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, 103, true));
-        ReturnPool.add(new Conversation(Const.ClientMessageType.Text, ConversationCodes.SHOW_HANGOUT_OPTIONS, false));
+        FoodPool.add(new Conversation(Const.ClientMessageType.Text, "So what food you like ?", true));
+        FoodPool.add(new Conversation(Const.ClientMessageType.Text, "Is it mexican", true));
+        FoodPool.add(new Conversation(Const.ClientMessageType.Text, "or is it indian", true));
     }
 
-    public static HashMap<Const.ClientStateType, ArrayList<Conversation>> poolList = new HashMap<>();
+    public static HashMap<ConversationPool.ClientStateType, ArrayList<Conversation>> poolList = new HashMap<>();
     static {
-        poolList.put(Const.ClientStateType.StartPool, StartPool);
+        poolList.put(ClientStateType.StartPool, StartPool);
+        poolList.put(ClientStateType.FoodPool, FoodPool);
     }
 
 

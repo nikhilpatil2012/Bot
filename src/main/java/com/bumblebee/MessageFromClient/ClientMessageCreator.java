@@ -142,6 +142,9 @@ public class ClientMessageCreator {
             clientMessage.setLat(coordinateJson.getDouble("lat"));
             clientMessage.setLng(coordinateJson.getDouble("long"));
         }
+
+
+        System.out.println(clientMessage.getLat()+"--"+clientMessage.getLng());
     }
 
 }

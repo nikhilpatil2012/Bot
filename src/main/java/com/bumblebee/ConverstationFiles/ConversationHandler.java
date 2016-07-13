@@ -133,7 +133,7 @@ public class ConversationHandler {
 
         ConversationCntrl conversationCntrl = new ConversationCntrl();
         conversationCntrl.setClientMessageType(Const.ClientMessageType.Text);
-        conversationCntrl.setClientStateType(Const.ClientStateType.StartPool);
+        conversationCntrl.setClientStateType(ConversationPool.ClientStateType.StartPool);
         conversationCntrl.setStep(0);
         conversationCntrl.setMvNext(true);
         conversationCntrl.setUserId(clientMessage.getSenderId());

@@ -18,10 +18,11 @@ public class LocationHandler extends MessageFromClientHandler {
         ClientMessage clientMessage = getClientMessage();
         ConversationCntrl conversationCntrl = getConversationCntrl();
 
+
         if(clientMessage.getAttachmentType().equals(Const.AttachmentType.location.name())){
 
             conversationCntrl.setLat(clientMessage.getLat());
-            conversationCntrl.setLat(clientMessage.getLng());
+            conversationCntrl.setLng(clientMessage.getLng());
             conversationCntrl.setMvNext(true);
 
         }

@@ -1,6 +1,8 @@
 package com.bumblebee.ConverstationFiles;
 
+import com.bumblebee.MessageFromClient.State;
 import com.bumblebee.common.utils.Const;
+import com.bumblebee.common.utils.ConversationPool;
 import com.bumblebee.model.User;
 
 import java.util.ArrayList;
@@ -11,7 +13,7 @@ import java.util.ArrayList;
 public class ConversationCntrl {
 
     private Const.ClientMessageType clientMessageType;
-    private Const.ClientStateType clientStateType;
+    private ConversationPool.ClientStateType clientStateType;
     private int step;
     private boolean mvNext = false;
     private double lat = 0.0;
@@ -21,6 +23,7 @@ public class ConversationCntrl {
     private ArrayList<Postback> postbacksList = new ArrayList<>();
     private User user;
     private String hangoutOption;
+    private State previousState;
 
     public User getUser() {
         return user;
@@ -28,6 +31,14 @@ public class ConversationCntrl {
 
     public String getHangoutOption() {
         return hangoutOption;
+    }
+
+    public State getPreviousState() {
+        return previousState;
+    }
+
+    public void setPreviousState(State previousState) {
+        this.previousState = previousState;
     }
 
     public void setHangoutOption(String hangoutOption) {
@@ -46,11 +57,11 @@ public class ConversationCntrl {
         this.clientMessageType = clientMessageType;
     }
 
-    public Const.ClientStateType getClientStateType() {
+    public ConversationPool.ClientStateType getClientStateType() {
         return clientStateType;
     }
 
-    public void setClientStateType(Const.ClientStateType clientStateType) {
+    public void setClientStateType(ConversationPool.ClientStateType clientStateType) {
         this.clientStateType = clientStateType;
     }
 
@@ -141,5 +152,6 @@ public class ConversationCntrl {
     public void addPostBack(Postback postback){
         getPostbacksList().add(postback);
     }
+
 }
 

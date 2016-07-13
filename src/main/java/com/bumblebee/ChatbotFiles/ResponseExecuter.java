@@ -2,6 +2,7 @@ package com.bumblebee.ChatbotFiles;
 
 import com.bumblebee.ClientMessage.MultiPartBodyWithMessage;
 import com.bumblebee.ClientMessage.MultiPartBodyWithPayload;
+import com.bumblebee.ResponseToClient.FetchDataFromFourSq;
 import com.bumblebee.common.utils.PlaceListCallback;
 import com.bumblebee.common.utils.StatusCodes;
 import org.springframework.stereotype.Service;

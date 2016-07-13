@@ -20,11 +20,7 @@ public class Const {
 
     }
 
-    public static enum ClientStateType{
 
-        StartPool, ReturnPool, LocationPool
-
-    }
 
     public static enum ClientAttachmentType{
 

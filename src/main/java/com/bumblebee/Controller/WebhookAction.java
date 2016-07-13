@@ -73,20 +73,19 @@ public class WebhookAction extends Action {
 
                     ResponseAction responseAction = responseActionFactory.getAction();
 
-                    ResponseActionResult responseActionResult = responseAction.execute();
+                    if(responseAction != null){
+                        ResponseActionResult responseActionResult = responseAction.execute();
 
+                        Timer timer = new Timer();
+                        timer.schedule(new TimerTask() {
+                            @Override
+                            public void run() {
 
-                    Timer timer = new Timer();
-                    timer.schedule(new TimerTask() {
-                        @Override
-                        public void run() {
+                                responseActionResult.sendMessage();
 
-                             responseActionResult.sendMessage();
-
-                        }
-                    }, 2000);
-
-
+                            }
+                        }, 2000);
+                    }
                 }
 
 

@@ -27,4 +27,10 @@ public abstract class MessageFromClientHandler {
     public ClientMessage getClientMessage() {
         return clientMessage;
     }
+
+    public void jumpToNewState(State newState){
+
+        conversationCntrl.setStep(newState.getPosition());
+        conversationCntrl.setClientStateType(newState.getClientStateType());
+    }
 }
