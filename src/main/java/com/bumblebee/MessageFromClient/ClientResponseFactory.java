@@ -25,13 +25,21 @@ public class ClientResponseFactory {
 
         System.out.println("CHeck this "+clientMessageType.name());
 
-        Class<? extends MessageFromClientHandler> controllerClass = actionMappings.get(clientMessageType.name());
+        Class<? extends MessageFromClientHandler> controllerClass = null;
+        MessageFromClientHandler newInstance = null;
 
-        try {
-            return controllerClass.newInstance();
-        } catch (Exception e) {
-            throw new RuntimeException("Could not create the action for :" + clientMessageType.name());
+        if(actionMappings.containsKey(clientMessageType.name())){
+
+            controllerClass = actionMappings.get(clientMessageType.name());
+            try {
+                newInstance = controllerClass.newInstance();
+            } catch (Exception e) {
+                throw new RuntimeException("Could not create the action for :" + clientMessageType.name());
+            }
         }
+
+        return newInstance;
+
     }
 
 
@@ -43,9 +51,14 @@ public class ClientResponseFactory {
        // Get or Create Conversation Controller
         ConversationCntrl conversationCntrl = new ConversationCntrlCreator().getConversationCntrl(clientMessage);
 
+
        // Create MessageFromClientHandler and initialize it with client message and conversation controller
        MessageFromClientHandler messageFromClientHandler = getHandlerInstance(clientMessage.getMessageType());
-       messageFromClientHandler.init(clientMessage, conversationCntrl);
+
+        if(messageFromClientHandler != null){
+
+            messageFromClientHandler.init(clientMessage, conversationCntrl);
+        }
 
         return messageFromClientHandler;
    }

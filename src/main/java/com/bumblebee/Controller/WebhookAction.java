@@ -67,24 +67,27 @@ public class WebhookAction extends Action {
 
                 MessageFromClientHandler messageFromClientHandler = new ClientResponseFactory().getHandler(response);
 
-                ResponseActionFactory responseActionFactory = messageFromClientHandler.execute();
+                if(messageFromClientHandler != null){
 
-                if(responseActionFactory.getConversationCntrl().isMvNext()){
+                    ResponseActionFactory responseActionFactory = messageFromClientHandler.execute();
 
-                    ResponseAction responseAction = responseActionFactory.getAction();
+                    if(responseActionFactory.getConversationCntrl().isMvNext()){
 
-                    if(responseAction != null){
-                        ResponseActionResult responseActionResult = responseAction.execute();
+                        ResponseAction responseAction = responseActionFactory.getAction();
 
-                        Timer timer = new Timer();
-                        timer.schedule(new TimerTask() {
-                            @Override
-                            public void run() {
+                        if(responseAction != null){
+                            ResponseActionResult responseActionResult = responseAction.execute();
 
-                                responseActionResult.sendMessage();
+                            Timer timer = new Timer();
+                            timer.schedule(new TimerTask() {
+                                @Override
+                                public void run() {
 
-                            }
-                        }, 2000);
+                                    responseActionResult.sendMessage();
+
+                                }
+                            }, 2000);
+                        }
                     }
                 }
 
