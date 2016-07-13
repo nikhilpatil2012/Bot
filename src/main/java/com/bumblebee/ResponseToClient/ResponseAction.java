@@ -3,6 +3,7 @@ package com.bumblebee.ResponseToClient;
 
 import com.bumblebee.ConverstationFiles.*;
 import com.bumblebee.common.utils.ConversationCodes;
+import com.bumblebee.common.utils.FinalCallback;
 
 /**
  * Created by deadcode on 28/06/2016.
@@ -12,7 +13,7 @@ public abstract class ResponseAction {
     private ConversationCntrl conversationCntrl = null;
     private Conversation conversation;
 
-    public abstract ResponseActionResult execute();
+    public abstract void execute(FinalCallback finalCallback);
 
     public void init(ConversationCntrl conversationCntrl, Conversation conversation){
 

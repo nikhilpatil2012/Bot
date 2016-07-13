@@ -7,11 +7,14 @@ import com.bumblebee.ClientMessage.ClientMessage;
 import com.bumblebee.ConverstationFiles.Conversation;
 import com.bumblebee.ConverstationFiles.ConversationCntrl;
 import com.bumblebee.ConverstationFiles.ConversationHandler;
+import com.bumblebee.JSONCreator.MasterJSON;
 import com.bumblebee.MessageFromClient.ClientResponseFactory;
 import com.bumblebee.MessageFromClient.MessageFromClientHandler;
 import com.bumblebee.ResponseToClient.ResponseAction;
 import com.bumblebee.ResponseToClient.ResponseActionFactory;
 import com.bumblebee.ResponseToClient.ResponseActionResult;
+import com.bumblebee.common.utils.FinalCallback;
+
 import java.io.BufferedReader;
 import java.util.*;
 
@@ -71,24 +74,21 @@ public class WebhookAction extends Action {
 
                     ResponseActionFactory responseActionFactory = messageFromClientHandler.execute();
 
-                    if(responseActionFactory.getConversationCntrl().isMvNext()){
+                    ResponseAction responseAction = responseActionFactory.getAction();
 
-                        ResponseAction responseAction = responseActionFactory.getAction();
+                    if(responseAction != null){
 
-                        if(responseAction != null){
-                            ResponseActionResult responseActionResult = responseAction.execute();
+                        responseAction.execute(new FinalCallback() {
+                            @Override
+                            public void masterJsonCallback(MasterJSON masterJSON) {
 
-                            Timer timer = new Timer();
-                            timer.schedule(new TimerTask() {
-                                @Override
-                                public void run() {
+                                ResponseActionResult responseActionResult = new ResponseActionResult(masterJSON);
+                                responseActionResult.sendMessage();
 
-                                    responseActionResult.sendMessage();
-
-                                }
-                            }, 2000);
-                        }
+                            }
+                        });
                     }
+
                 }
 
 

@@ -3,10 +3,7 @@ package com.bumblebee.ResponseToClient;
 import com.bumblebee.ChatbotFiles.*;
 import com.bumblebee.JSONCreator.*;
 import com.bumblebee.JSONCreator.Element;
-import com.bumblebee.common.utils.Const;
-import com.bumblebee.common.utils.ConversationCodes;
-import com.bumblebee.common.utils.ConversationPool;
-import com.bumblebee.common.utils.PlaceListCallback;
+import com.bumblebee.common.utils.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,7 +17,7 @@ public class HangoutOptions extends ResponseAction{
 
 
     @Override
-    public ResponseActionResult execute() {
+    public void execute(FinalCallback finalCallback) {
 
         // Update conversation cntrl with postback
         updatePostback(ConversationCodes.PostbackType.Hangout_Options);
@@ -28,7 +25,6 @@ public class HangoutOptions extends ResponseAction{
         //Create JSON
 
         int masterCode = getConversation().getCode();
-        MasterJSON masterJSON = null;
 
         switch (masterCode) {
 
@@ -45,8 +41,9 @@ public class HangoutOptions extends ResponseAction{
 
                 Attachment attachment = new Attachment(Const.AttachmentType.template, payload);
 
-                masterJSON = new MasterJSON("931411386981115", attachment);
+                MasterJSON  masterJSON = new MasterJSON("931411386981115", attachment);
 
+                finalCallback.masterJsonCallback(masterJSON);
             }break;
 
             case ConversationPool.SHOW_FOURSQUARE_OPTIONS: {
@@ -89,21 +86,23 @@ public class HangoutOptions extends ResponseAction{
 
                             Element e = new Element(element.getTitle(), element.getSubtitle(), element.getImageUrl(), buttonJSONCntlr);
 
-
                             elementArrayList.add(e);
 
                             System.out.println(element.getTitle());
 
                         }
 
+
+                        Payload payload = new Payload(Const.PayloadType.generic, new ElementJSONCntlr(elementArrayList));
+
+                        Attachment attachment = new Attachment(Const.AttachmentType.template, payload);
+
+                        MasterJSON masterJSON = new MasterJSON("931411386981115", attachment);
+
+                        finalCallback.masterJsonCallback(masterJSON);
+
                     }
                 });
-
-                Payload payload = new Payload(Const.PayloadType.generic, new ElementJSONCntlr(elementArrayList));
-
-                Attachment attachment = new Attachment(Const.AttachmentType.template, payload);
-
-                masterJSON = new MasterJSON("931411386981115", attachment);
 
             }break;
         }
@@ -111,7 +110,6 @@ public class HangoutOptions extends ResponseAction{
 
       //  System.out.println(masterJSON.getMasterJSON());
 
-        return new ResponseActionResult(masterJSON);
     }
 
     public void createElement(){

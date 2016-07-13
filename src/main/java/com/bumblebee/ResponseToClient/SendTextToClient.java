@@ -8,6 +8,11 @@ import com.bumblebee.JSONCreator.MasterJSON;
 import com.bumblebee.JSONCreator.Payload;
 import com.bumblebee.common.utils.Const;
 import com.bumblebee.common.utils.ConversationPool;
+import com.bumblebee.common.utils.FinalCallback;
+
+import java.sql.Time;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by deadcode on 01/07/2016.
@@ -15,7 +20,7 @@ import com.bumblebee.common.utils.ConversationPool;
 public class SendTextToClient extends ResponseAction {
 
     @Override
-    public ResponseActionResult execute() {
+    public void execute(FinalCallback finalCallback) {
 
         Conversation conversation = getConversation();
         ConversationCntrl conversationCntrl = getConversationCntrl();
@@ -24,7 +29,16 @@ public class SendTextToClient extends ResponseAction {
 
         MasterJSON masterJSON = new MasterJSON(conversationCntrl.getUserId(), text); //931411386981115
 
-        return new ResponseActionResult(masterJSON);
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+
+                finalCallback.masterJsonCallback(masterJSON);
+
+            }
+        }, 2000);
+
     }
 
 

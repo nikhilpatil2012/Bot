@@ -30,7 +30,9 @@ public class FetchDataFromFourSq{
 
         this.query = query;
 
-         String url = "https://api.foursquare.com/v2/venues/explore?client_id=J5Y54V5MBQ52ZAHODHCSC4MWYQ5FDXJK1WI1ZUDKFHFHJB5Z&client_secret=YDQRSDZOPJZERXDE0W1ZDDYQGPQVVTHUHRWE25K0HJ1Z1JAA&v=20130815&venuePhotos=1&ll="+query.getWhere()+"&query="+query.getWhat();
+         //String url = "https://api.foursquare.com/v2/venues/explore?client_id=J5Y54V5MBQ52ZAHODHCSC4MWYQ5FDXJK1WI1ZUDKFHFHJB5Z&client_secret=YDQRSDZOPJZERXDE0W1ZDDYQGPQVVTHUHRWE25K0HJ1Z1JAA&v=20130815&venuePhotos=1&ll="+query.getWhere()+"&query="+query.getWhat();
+
+         String url = "https://api.foursquare.com/v2/venues/explore?client_id=J5Y54V5MBQ52ZAHODHCSC4MWYQ5FDXJK1WI1ZUDKFHFHJB5Z&client_secret=YDQRSDZOPJZERXDE0W1ZDDYQGPQVVTHUHRWE25K0HJ1Z1JAA&v=20130815&venuePhotos=1&ll=53.317126105589,-6.2823355849891&query=Cafe";
 
         System.out.println(url);
 
