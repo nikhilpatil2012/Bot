@@ -54,14 +54,13 @@ public class HangoutOptions extends ResponseAction{
                 FetchDataFromFourSq fetchDataFromFourSq = new FetchDataFromFourSq();
 
                 Query query = new Query();
-//                query.setWhat("beer");
-//                query.setWhere("53.317126105589,-6.2823355849891");
 
 
                 if(getConversationCntrl().getHangoutOption() != null){
 
                     query.setWhat(getConversationCntrl().getHangoutOption());
                 }
+
 
                 if(getConversationCntrl().getLat() != 0.0 && getConversationCntrl().getLng() != 0.0){
 
@@ -71,7 +70,6 @@ public class HangoutOptions extends ResponseAction{
                 System.out.println("Where = "+query.getWhere()+"--"+query.getWhat());
 
                 ArrayList<Element> elementArrayList = new ArrayList<>();
-
 
                 fetchDataFromFourSq.sendQueryToFourSq(query, new PlaceListCallback() {
                     @Override
