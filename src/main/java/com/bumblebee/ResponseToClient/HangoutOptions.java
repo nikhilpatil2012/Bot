@@ -30,8 +30,8 @@ public class HangoutOptions extends ResponseAction{
 
             case ConversationPool.SHOW_HANGOUT_OPTIONS :{
 
-
                 ArrayList<Element> elementArrayList = new ArrayList<>();
+
                 elementArrayList.add(new Element("Cafe", "Coffee", "http://i.giphy.com/dGhlifOCTtSdW.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Cafe", masterCode+"_Cafe", null)})));
                 elementArrayList.add(new Element("Bar", "Party", "http://i.giphy.com/DlGaTfcMeDmz6.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Bars", masterCode+"_Bar", null)})));
                 elementArrayList.add(new Element("Dine", "Food", "http://i.giphy.com/3o85xBgXf4rAt5H7RS.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Dine", masterCode+"_Dine", null)})));

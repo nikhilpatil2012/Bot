@@ -109,12 +109,12 @@ public class ResponseActionFactory {
                     conversationCntrl.setPreviousState(null);
                 }
             }
-             // Refresh the list
+/*             // Refresh the list
              else if(conversationCntrl.getClientStateType().compareTo(ConversationPool.ClientStateType.StartPool) == 0) {
 
                 conversationCntrl.setStep(-1);
 
-            }
+            }*/
 
 
         }
