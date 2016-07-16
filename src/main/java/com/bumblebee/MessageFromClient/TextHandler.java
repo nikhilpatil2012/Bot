@@ -11,11 +11,6 @@ public class TextHandler extends MessageFromClientHandler {
     @Override
     public ResponseActionFactory execute() {
 
-        if(getClientMessage().getMessageText().equals("Hey")){
-
-             getConversationCntrl().setStep(-1);
-        }
-
         return new ResponseActionFactory(getConversationCntrl());
     }
 }
