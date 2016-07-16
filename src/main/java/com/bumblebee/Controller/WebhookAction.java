@@ -74,19 +74,22 @@ public class WebhookAction extends Action {
 
                     ResponseActionFactory responseActionFactory = messageFromClientHandler.execute();
 
-                    ResponseAction responseAction = responseActionFactory.getAction();
+                    if(responseActionFactory != null){
 
-                    if(responseAction != null){
+                        ResponseAction responseAction = responseActionFactory.getAction();
 
-                        responseAction.execute(new FinalCallback() {
-                            @Override
-                            public void masterJsonCallback(MasterJSON masterJSON) {
+                        if(responseAction != null){
 
-                                ResponseActionResult responseActionResult = new ResponseActionResult(masterJSON);
-                                responseActionResult.sendMessage();
+                            responseAction.execute(new FinalCallback() {
+                                @Override
+                                public void masterJsonCallback(MasterJSON masterJSON) {
 
-                            }
-                        });
+                                    ResponseActionResult responseActionResult = new ResponseActionResult(masterJSON);
+                                    responseActionResult.sendMessage();
+
+                                }
+                            });
+                        }
                     }
 
                 }
