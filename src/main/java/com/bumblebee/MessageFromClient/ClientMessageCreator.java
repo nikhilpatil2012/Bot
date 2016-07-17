@@ -33,10 +33,14 @@ public class ClientMessageCreator {
                 }
                 else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("delivery")){
 
+                    System.out.println("This is delievery");
+
                     // Parse Delivery Message
                     parseDeliveryConfirmation(clientMessage, jsonObject);
                 }
                 else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("read")){
+
+                    System.out.println("This is Read Message");
 
                     // Parse Delivery Message
                     parseReadConfirmation(clientMessage, jsonObject);

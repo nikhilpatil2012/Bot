@@ -48,21 +48,16 @@ public class ClientResponseFactory {
        // Create Client Message
        ClientMessage clientMessage = new ClientMessageCreator().getClientMessagePOJO(clientJson);
 
-        MessageFromClientHandler messageFromClientHandler = null;
+       // Get or Create Conversation Controller
+        ConversationCntrl conversationCntrl = new ConversationCntrlCreator().getConversationCntrl(clientMessage);
 
-        if(clientMessage.getMessageType().compareTo(Const.ClientMessageType.Delivery) != 0){
 
-            // Get or Create Conversation Controller
-            ConversationCntrl conversationCntrl = new ConversationCntrlCreator().getConversationCntrl(clientMessage);
+       // Create MessageFromClientHandler and initialize it with client message and conversation controller
+       MessageFromClientHandler messageFromClientHandler = getHandlerInstance(clientMessage.getMessageType());
 
-            // Create MessageFromClientHandler and initialize it with client message and conversation controller
-             messageFromClientHandler = getHandlerInstance(clientMessage.getMessageType());
+        if(messageFromClientHandler != null){
 
-            if(messageFromClientHandler != null){
-
-                messageFromClientHandler.init(clientMessage, conversationCntrl);
-            }
-
+            messageFromClientHandler.init(clientMessage, conversationCntrl);
         }
 
         return messageFromClientHandler;
