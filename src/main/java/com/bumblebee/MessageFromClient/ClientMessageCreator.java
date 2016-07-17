@@ -31,11 +31,11 @@ public class ClientMessageCreator {
                     parseMessage(clientMessage, jsonObject);
 
                 }
-                else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("delivery")){
+/*                else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("delivery")){
 
                     // Parse Delivery Message
                     parseDeliveryConfirmation(clientMessage, jsonObject);
-                }
+                }*/
                 else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("read")){
 
                     System.out.println("Inside Read JSON");

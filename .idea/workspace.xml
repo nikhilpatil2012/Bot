@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="151ca84f-c993-45dd-a6c2-d081244ba22e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java" />
     </list>
     <ignored path="assignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +25,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HangoutOptions.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java">
+      <file leaf-file-name="ClientMessageCreator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6434635">
-              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.43803057">
+              <caret line="33" column="2" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="19" />
+              <folding>
+                <element signature="method#parseAuthentication#0;class#ClientMessageCreator#0" expanded="false" />
+                <element signature="method#parseMessage#0;class#ClientMessageCreator#0" expanded="false" />
+                <element signature="method#parseText#0;class#ClientMessageCreator#0" expanded="false" />
+                <element signature="method#parsePostback#0;class#ClientMessageCreator#0" expanded="false" />
+                <element signature="method#parseAttachment#0;class#ClientMessageCreator#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientResponseFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendTextToClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/SendTextToClient.java">
+      <file leaf-file-name="WebhookAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="39" selection-end-column="17" />
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/PostbackHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/Action.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/LocationHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/FetchDataFromFourSq.java" />
@@ -112,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/DeliveryHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java" />
       </list>
     </option>
   </component>
@@ -339,7 +355,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="We&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;Co&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Webac&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;Conversa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Webh&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;Action&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/Action.java&#10;COnv&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Web&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;COnver&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Const&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/Const.java&#10;COnvers&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Convers&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Conver&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Conv&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Han&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java&#10;Cons&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/Const.java&#10;Client&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java&#10;Us&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/UserProfileCallback.java&#10;Conve&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Pos&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/Postback.java&#10;Button&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/JSONCreator/ButtonJSONCntlr.java&#10;Butt&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/JSONCreator/Button.java&#10;ConversationCo&#9;PSI&#9;JAVA://com.bumblebee.common.utils.ConversationCodes&#10;COnversa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Con&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java&#10;Resp&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java&#10;COnve&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java&#10;Get&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/GetUserProfile.java&#10;Post&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/Postback.java&#10;Clie&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;Hang&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java&#10;ClientM&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;ClientMes&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;CHa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ChatbotFiles/ChatParser.java&#10;Me&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java&#10;Sta&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/StatusCodes.java&#10;User&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/database/DAO/UserDAO.java&#10;Act&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/Controller/ActionFactory.java&#10;UserA&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/Controller/UserAction.java" />
+    <property name="SearchEverywhereHistoryKey" value="Web&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;Conversa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;We&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;Co&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Webac&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;Webh&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/WebhookAction.java&#10;Action&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/Controller/Action.java&#10;COnv&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;COnver&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Const&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/Const.java&#10;COnvers&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Convers&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Conver&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Conv&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/ConversationPool.java&#10;Han&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java&#10;Cons&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/Const.java&#10;Client&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java&#10;Us&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/UserProfileCallback.java&#10;Conve&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Pos&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/Postback.java&#10;Button&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/JSONCreator/ButtonJSONCntlr.java&#10;Butt&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/JSONCreator/Button.java&#10;ConversationCo&#9;PSI&#9;JAVA://com.bumblebee.common.utils.ConversationCodes&#10;COnversa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java&#10;Con&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java&#10;Resp&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java&#10;COnve&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/ConversationHandler.java&#10;Get&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/GetUserProfile.java&#10;Post&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ConverstationFiles/Postback.java&#10;Clie&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;Hang&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java&#10;ClientM&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;ClientMes&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ClientMessage/ClientMessage.java&#10;CHa&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ChatbotFiles/ChatParser.java&#10;Me&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/ChatbotFiles/MessageMiner.java&#10;Sta&#9;FILE&#9;file:///Users/deadcode/BumbleBee/src/main/java/com/bumblebee/common/utils/StatusCodes.java&#10;User&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/database/DAO/UserDAO.java&#10;Act&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/Controller/ActionFactory.java&#10;UserA&#9;FILE&#9;file:///Users/deadcode/Documents/assignment/src/main/java/com/assignment/Controller/UserAction.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -931,32 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7962648">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="146" selection-end-column="79" />
-          <folding>
-            <element signature="method#parseAuthentication#0;class#ClientMessageCreator#0" expanded="false" />
-            <element signature="method#parseMessage#0;class#ClientMessageCreator#0" expanded="false" />
-            <element signature="method#parseText#0;class#ClientMessageCreator#0" expanded="false" />
-            <element signature="method#parseDeliveryConfirmation#0;class#ClientMessageCreator#0" expanded="false" />
-            <element signature="method#parsePostback#0;class#ClientMessageCreator#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327674">
           <caret line="392" column="13" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,26 +980,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseActionResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6434635">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1045,10 +1023,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/SendTextToClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="39" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.41426146">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1058,6 +1036,44 @@
         <state vertical-scroll-proportion="0.6434635">
           <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/SendTextToClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48387095">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43803057">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="19" />
+          <folding>
+            <element signature="method#parseAuthentication#0;class#ClientMessageCreator#0" expanded="false" />
+            <element signature="method#parseMessage#0;class#ClientMessageCreator#0" expanded="false" />
+            <element signature="method#parseText#0;class#ClientMessageCreator#0" expanded="false" />
+            <element signature="method#parsePostback#0;class#ClientMessageCreator#0" expanded="false" />
+            <element signature="method#parseAttachment#0;class#ClientMessageCreator#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
