@@ -31,17 +31,15 @@ public class ClientMessageCreator {
                     parseMessage(clientMessage, jsonObject);
 
                 }
-/*                else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("delivery")){
+                else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("delivery")){
 
                     // Parse Delivery Message
                     parseDeliveryConfirmation(clientMessage, jsonObject);
-                }*/
+                }
                 else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("read")){
 
-                    System.out.println("Inside Read JSON");
-
                     // Parse Delivery Message
-                    parseDeliveryConfirmation(clientMessage, jsonObject);
+                    parseReadConfirmation(clientMessage, jsonObject);
                 }
                 else if(!(jsonObject = jsonArray.getJSONObject(0)).isNull("postback")){
 
@@ -89,25 +87,24 @@ public class ClientMessageCreator {
 
     private  void parseDeliveryConfirmation(ClientMessage clientMessage, JSONObject jsonObject){
 
-        if(!jsonObject.isNull("delivery")){
+        JSONObject deliveryJSON = jsonObject.getJSONObject("delivery");
+        clientMessage.setMessageType(Const.ClientMessageType.Delivery);
+        clientMessage.setWatermark(deliveryJSON.getLong("watermark"));
 
-            JSONObject deliveryJSON = jsonObject.getJSONObject("delivery");
-            clientMessage.setMessageType(Const.ClientMessageType.Delivery);
-            clientMessage.setWatermark(deliveryJSON.getLong("watermark"));
-
-            System.out.println("Watermark :- "+clientMessage.getWatermark());
-        }
-         else if(!jsonObject.isNull("read")){
-
-            JSONObject deliveryJSON = jsonObject.getJSONObject("read");
-            clientMessage.setMessageType(Const.ClientMessageType.Delivery);
-            clientMessage.setWatermark(deliveryJSON.getLong("watermark"));
-
-            System.out.println("Watermark :- "+clientMessage.getWatermark());
-
-        }
+        System.out.println("Watermark :- "+clientMessage.getWatermark());
 
     }
+
+    private  void parseReadConfirmation(ClientMessage clientMessage, JSONObject jsonObject){
+
+        JSONObject deliveryJSON = jsonObject.getJSONObject("read");
+        clientMessage.setMessageType(Const.ClientMessageType.Read);
+        clientMessage.setWatermark(deliveryJSON.getLong("watermark"));
+
+        System.out.println("Watermark :- "+clientMessage.getWatermark());
+
+    }
+
 
     private  void parsePostback(ClientMessage clientMessage, JSONObject jsonObject){
 

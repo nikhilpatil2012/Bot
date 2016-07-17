@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="151ca84f-c993-45dd-a6c2-d081244ba22e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java" />
     </list>
     <ignored path="assignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,27 +27,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClientMessageCreator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientMessageCreator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43803057">
-              <caret line="33" column="2" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="method#parseAuthentication#0;class#ClientMessageCreator#0" expanded="false" />
                 <element signature="method#parseMessage#0;class#ClientMessageCreator#0" expanded="false" />
                 <element signature="method#parseText#0;class#ClientMessageCreator#0" expanded="false" />
-                <element signature="method#parsePostback#0;class#ClientMessageCreator#0" expanded="false" />
                 <element signature="method#parseAttachment#0;class#ClientMessageCreator#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientResponseFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClientResponseFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6943973">
+              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Const.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -55,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <caret line="70" column="99" selection-start-line="70" selection-start-column="99" selection-end-line="70" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -107,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/ConversationCodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/Conversation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/JSONCreator/Button.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/State.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ConverstationFiles/ConversationCntrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/MessageFromClientHandler.java" />
@@ -116,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/PostbackHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/Action.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/LocationHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/FetchDataFromFourSq.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/FinalCallback.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/ResponseAction.java" />
@@ -127,7 +136,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/DeliveryHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java" />
       </list>
     </option>
   </component>
@@ -877,13 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/State.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43293718">
@@ -1047,33 +1051,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/common/utils/Const.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientMessageCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43803057">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="method#parseAuthentication#0;class#ClientMessageCreator#0" expanded="false" />
             <element signature="method#parseMessage#0;class#ClientMessageCreator#0" expanded="false" />
             <element signature="method#parseText#0;class#ClientMessageCreator#0" expanded="false" />
-            <element signature="method#parsePostback#0;class#ClientMessageCreator#0" expanded="false" />
             <element signature="method#parseAttachment#0;class#ClientMessageCreator#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/Controller/WebhookAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="99" selection-start-line="70" selection-start-column="99" selection-end-line="70" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/MessageFromClient/ClientResponseFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6943973">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

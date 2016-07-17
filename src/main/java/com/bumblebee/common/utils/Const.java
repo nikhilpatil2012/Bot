@@ -16,7 +16,7 @@ public class Const {
 
     public static enum ClientMessageType{
 
-        Text, Delivery, Postback, TextWithAttach
+        Text, Delivery, Postback, TextWithAttach, Read
 
     }
 
