@@ -48,7 +48,7 @@ public class ClientResponseFactory {
        // Create Client Message
        ClientMessage clientMessage = new ClientMessageCreator().getClientMessagePOJO(clientJson);
 
-       // Get or Create Conversation Controller
+       // Get or Create Conversation WebController
         ConversationCntrl conversationCntrl = new ConversationCntrlCreator().getConversationCntrl(clientMessage);
 
 

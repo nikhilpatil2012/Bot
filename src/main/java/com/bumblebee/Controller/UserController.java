@@ -16,12 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 public class UserController {
 
 
-    @RequestMapping(value = "/redirect")
-    public String daddy() {
-
-        return "daddy";
-    }
-
     @RequestMapping(value = "/*")
     public ResponseEntity<String> addUser(HttpServletRequest request) {
 
