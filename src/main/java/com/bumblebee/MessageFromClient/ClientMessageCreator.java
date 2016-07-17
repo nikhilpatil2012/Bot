@@ -75,17 +75,21 @@ public class ClientMessageCreator {
 
         if(!message.isNull("is_echo") && message.getBoolean("is_echo")){
 
+            System.out.println("Message is Echo");
+
             parseMessageEcho(clientMessage, jsonObject);
         }
           else {
 
+            System.out.println("Message is Normal");
+
             if(!message.isNull("text")){
 
-                parseText(clientMessage, jsonObject);
+                parseText(clientMessage, message);
             }
             else if(!message.isNull("attachments")){
 
-                parseAttachment(clientMessage, jsonObject);
+                parseAttachment(clientMessage, message);
             }
         }
     }
