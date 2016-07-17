@@ -71,15 +71,42 @@ public class ClientMessageCreator {
 
     private  void parseMessage(ClientMessage clientMessage, JSONObject jsonObject){
 
+       JSONObject message = jsonObject.getJSONObject("message");
+
+        if(!message.isNull("is_echo") && message.getBoolean("is_echo")){
+
+            parseMessageEcho(clientMessage, jsonObject);
+        }
+          else {
+
+            if(!message.isNull("text")){
+
+                parseText(clientMessage, jsonObject);
+            }
+            else if(!message.isNull("attachments")){
+
+                parseAttachment(clientMessage, jsonObject);
+            }
+        }
+    }
+
+    private  void parseMessageEcho(ClientMessage clientMessage, JSONObject jsonObject){
+
         jsonObject = jsonObject.getJSONObject("message");
 
         if(!jsonObject.isNull("text")){
 
             parseText(clientMessage, jsonObject);
+
+            // Set Message Type
+            clientMessage.setMessageType(Const.ClientMessageType.EchoText);
         }
         else if(!jsonObject.isNull("attachments")){
 
             parseAttachment(clientMessage, jsonObject);
+
+            // Set Message Type
+            clientMessage.setMessageType(Const.ClientMessageType.EchoTextWithAttach);
         }
 
     }
