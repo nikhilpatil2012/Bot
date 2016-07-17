@@ -7,6 +7,8 @@ import com.bumblebee.common.utils.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by deadcode on 28/06/2016.
@@ -43,7 +45,16 @@ public class HangoutOptions extends ResponseAction{
 
                 MasterJSON  masterJSON = new MasterJSON("931411386981115", attachment);
 
-                finalCallback.masterJsonCallback(masterJSON);
+                Timer timer = new Timer();
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+
+                        finalCallback.masterJsonCallback(masterJSON);
+
+                    }
+                }, 2000);
+
             }break;
 
             case ConversationPool.SHOW_FOURSQUARE_OPTIONS: {
