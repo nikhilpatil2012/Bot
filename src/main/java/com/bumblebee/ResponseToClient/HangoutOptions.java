@@ -34,10 +34,10 @@ public class HangoutOptions extends ResponseAction{
 
                 ArrayList<Element> elementArrayList = new ArrayList<>();
 
-                elementArrayList.add(new Element("Cafe", "Coffee", "http://i.giphy.com/dGhlifOCTtSdW.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Cafe", masterCode+"_Cafe", null)})));
-                elementArrayList.add(new Element("Bar", "Party", "http://i.giphy.com/DlGaTfcMeDmz6.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Bars", masterCode+"_Bar", null)})));
-                elementArrayList.add(new Element("Dine", "Food", "http://i.giphy.com/3o85xBgXf4rAt5H7RS.gif", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Dine", masterCode+"_Dine", null)})));
-                elementArrayList.add(new Element("Attractions", "Fun", "https://i.imgur.com/suWnVRT.gifv", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Attractions", masterCode+"_Attraction", null)})));
+                elementArrayList.add(new Element("Cafe", "Coffee", "http://www.logofromdreams.com/code_pic/1350066261coffee.PNG", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Cafe", masterCode+"_Cafe", null)})));
+                elementArrayList.add(new Element("Bar", "Party", "https://s-media-cache-ak0.pinimg.com/736x/c6/f2/8d/c6f28dff26afa79ba4ae4cfaff053cb9.jpg", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Bars", masterCode+"_Bar", null)})));
+                elementArrayList.add(new Element("Dine", "Food", "https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB07T46L6.png", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Dine", masterCode+"_Dine", null)})));
+                elementArrayList.add(new Element("Attractions", "Fun", "http://www.hollywoodreporter.com/sites/default/files/2012/10/roadside_2k_092811_0.00.14.23.jpg", new ButtonJSONCntlr(new Button[]{new Button(Const.ButtonType.postback,"Show Attractions", masterCode+"_Attraction", null)})));
 
                 Payload payload = new Payload(Const.PayloadType.generic, new ElementJSONCntlr(elementArrayList));
 

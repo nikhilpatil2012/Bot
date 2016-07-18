@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="151ca84f-c993-45dd-a6c2-d081244ba22e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java" afterPath="$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/daddy.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/daddy.html" />
     </list>
     <ignored path="assignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.3918919">
-              <caret line="39" column="104" selection-start-line="39" selection-start-column="104" selection-end-line="39" selection-end-column="104" />
+              <caret line="39" column="166" selection-start-line="39" selection-start-column="166" selection-end-line="39" selection-end-column="166" />
               <folding />
             </state>
           </provider>
@@ -1204,7 +1202,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bumblebee/ResponseToClient/HangoutOptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3918919">
-          <caret line="39" column="104" selection-start-line="39" selection-start-column="104" selection-end-line="39" selection-end-column="104" />
+          <caret line="39" column="166" selection-start-line="39" selection-start-column="166" selection-end-line="39" selection-end-column="166" />
           <folding />
         </state>
       </provider>
