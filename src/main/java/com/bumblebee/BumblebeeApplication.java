@@ -29,7 +29,7 @@ public class BumblebeeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BumblebeeApplication.class, args);
 
-		FileInputStream stream = null;
+/*		FileInputStream stream = null;
 		try {
 			stream = new FileInputStream(new File("/Users/deadcode/Desktop/good_morning.png"));
 
@@ -48,7 +48,7 @@ public class BumblebeeApplication {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}*/
 
 
 	}
