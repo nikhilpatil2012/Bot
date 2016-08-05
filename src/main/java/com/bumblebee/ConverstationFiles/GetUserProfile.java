@@ -1,6 +1,7 @@
 package com.bumblebee.ConverstationFiles;
 
 import com.bumblebee.common.utils.UserProfileCallback;
+import com.bumblebee.database.DAO.UserDAO;
 import com.bumblebee.model.User;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
@@ -34,10 +35,9 @@ public class GetUserProfile {
 
                 System.out.println(jsonObject);
 
-                User user = new User(jsonObject.getString("first_name"), jsonObject.getString("last_name"), jsonObject.getString("gender"));
+                User user = getUserFromJSON(jsonObject);
 
                 userProfileCallback.getUserCallback(user);
-
             }
 
             @Override
@@ -52,4 +52,31 @@ public class GetUserProfile {
         });
 
     }
+
+    public User getUserFromJSON(JSONObject jsonObject){
+
+        if(jsonObject == null){
+            return null;
+        }
+
+        User user = new User();
+
+        user.setUserFbId(conversationCntrl.getUserId());
+
+        if(!jsonObject.isNull("first_name")){
+            user.setFirstName(jsonObject.getString("first_name"));
+        }
+
+        if(!jsonObject.isNull("last_name")){
+            user.setLastName(jsonObject.getString("last_name"));
+        }
+
+        if(!jsonObject.isNull("gender")){
+            user.setGender(jsonObject.getString("gender"));
+        }
+
+        return user;
+    }
+
+
 }

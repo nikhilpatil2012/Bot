@@ -7,6 +7,7 @@ import com.bumblebee.ConverstationFiles.GetUserProfile;
 import com.bumblebee.common.utils.Const;
 import com.bumblebee.common.utils.ConversationPool;
 import com.bumblebee.common.utils.UserProfileCallback;
+import com.bumblebee.database.DAO.UserDAO;
 import com.bumblebee.model.User;
 
 /**
@@ -47,12 +48,13 @@ public class ConversationCntrlCreator {
         GetUserProfile getUserProfile = new GetUserProfile(conversationCntrl);
         getUserProfile.getUserProfile(user -> {
 
-            conversationCntrl.setFirstName(user.getFirstName());
+            // Store the profile in database
 
-            System.out.println("User Name "+user.getFirstName());
-            System.out.println("CC is "+conversationCntrl.getFirstName());
-            System.out.println(conversationCntrl.getClientMessageType());
+            UserDAO userDAO = new UserDAO();
 
+            int insertStatus = userDAO.addNewUser(user);
+
+            System.out.println("User profile insert status "+insertStatus);
 
         });
 

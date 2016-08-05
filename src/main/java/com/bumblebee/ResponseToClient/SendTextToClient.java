@@ -9,6 +9,8 @@ import com.bumblebee.JSONCreator.Payload;
 import com.bumblebee.common.utils.Const;
 import com.bumblebee.common.utils.ConversationPool;
 import com.bumblebee.common.utils.FinalCallback;
+import com.bumblebee.database.DAO.UserDAO;
+import com.bumblebee.model.User;
 
 import java.sql.Time;
 import java.util.Timer;
@@ -25,7 +27,10 @@ public class SendTextToClient extends ResponseAction {
         Conversation conversation = getConversation();
         ConversationCntrl conversationCntrl = getConversationCntrl();
 
-        String text = String.format(conversation.getText(), conversationCntrl.getFirstName());
+        UserDAO userDAO = new UserDAO();
+        User user = userDAO.getUserFromId(conversationCntrl.getUserId());
+
+        String text = String.format(conversation.getText(), (conversation.getText().contains("%s") ? user.getFirstName() : ""));
 
         MasterJSON masterJSON = new MasterJSON(conversationCntrl.getUserId(), text); //931411386981115
 
@@ -40,6 +45,4 @@ public class SendTextToClient extends ResponseAction {
         }, 2000);
 
     }
-
-
 }

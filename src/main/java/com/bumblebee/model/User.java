@@ -19,12 +19,14 @@ public class User {
   private String firstName;
   private String lastName;
   private String gender;
+  private String userFbId;
 
+    public String getUserFbId() {
+        return userFbId;
+    }
 
-    public User(String firstName, String lastName, String gender) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.gender = gender;
+    public void setUserFbId(String userFbId) {
+        this.userFbId = userFbId;
     }
 
     public String getFirstName() {
@@ -35,8 +37,19 @@ public class User {
         return lastName;
     }
 
-
     public String getGender() {
         return gender;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }
